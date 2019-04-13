@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Entidades;
 namespace MiCalculadora
 {
-    public class Calculadora
+    public static class Calculadora
     {
-        public double Operar(Numero num1, Numero num2, string operador)
+        public static double Operar(Numero num1, Numero num2, string operador)
         {
             double resultado = 0;
             string operadorValido = Calculadora.ValidarOperador(operador);

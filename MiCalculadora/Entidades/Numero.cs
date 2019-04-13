@@ -87,7 +87,10 @@ namespace Entidades
         }
         public static double operator /(Numero n1, Numero n2)
         {
-            return n2.numero != 0 ? n1.numero/n2.numero : Double.MinValue;
+            if (n2.numero != 0)
+                return n1.numero / n2.numero;
+            else
+                return Double.MinValue;
         }
         private double ValidarNumero(string strNumero)
         {

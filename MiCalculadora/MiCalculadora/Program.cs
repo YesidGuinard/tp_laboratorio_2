@@ -16,7 +16,7 @@ namespace MiCalculadora
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LaCalculadora());
+            Application.Run(new FormCalculadora());
         }
     }
 }
