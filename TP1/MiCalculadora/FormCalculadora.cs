@@ -16,7 +16,7 @@ namespace MiCalculadora
         {
             InitializeComponent();
         }
-
+        
         private void btnOperar_Click(object sender, EventArgs e)
         {
             string operando1 = txtNumero1.Text;
@@ -55,7 +55,10 @@ namespace MiCalculadora
             btnConvertirABinario.Enabled = true;
             btnConvertirADecimal.Enabled = false;
         }
-
+        
+        /// <summary>
+        /// Limpia campos de texto de Captura de datos y resultados 
+        /// </summary>
         private void Limpiar()
         {
             txtNumero1.Text = "";
@@ -64,6 +67,13 @@ namespace MiCalculadora
             lblResultado.Text = "";
         }
 
+        /// <summary>
+        /// Realiza la operacion arimetica Usando metodo estatico de la Clase Calculadora
+        /// </summary>
+        /// <param name="numero1">Operando 1</param>
+        /// <param name="numero2">Operando 2</param>
+        /// <param name="operador">Resultado operacion</param>
+        /// <returns></returns>
         private static double Operar(string numero1, string numero2, string operador)
         {
             Numero num1 = new Numero(numero1);
