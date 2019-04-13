@@ -23,50 +23,81 @@ namespace Entidades
         }
         public Numero(double numero)
         {
-            this.numero = numero;
+            this.SetNumero = numero.ToString();
         }
         public Numero(string strNumero)
         {
-            //parse str y usar contructor double
+            this.SetNumero = strNumero;
         }
         public string BinarioDecimal(string binario)
         {
-            string decimalRetornado = "Valor inválido";
+            
+            foreach (char caracter in binario)
+            {
+                if (caracter != '0' && caracter != '1')
+                {
+                    return "Valor inválido";
+                }
+            }
 
-            return decimalRetornado;
+            long resultado = 0;  // Variable long para convertir string grandes
+            for (int i = 1; i <= binario.Length; i++)
+            {
+                resultado += int.Parse(binario[i - 1].ToString()) * (int)Math.Pow(2, binario.Length - i);
+            }
+            return resultado.ToString();
+
+           
         }
         public string DecimalBinario(double numero)
         {
-            string binarioRetornado = "Valor inválido";
+            string resultado = "Valor inválido";
+            
+            while (numero > 0)
+            {
+                resultado = (numero % 2).ToString() + resultado;
+                numero = (int)numero / 2;
+            }
 
-            return binarioRetornado;
+            return resultado;
         }
         public string DecimalBinario(string numero)
         {
             string binarioRetornado = "Valor inválido";
 
+            double numeroParseado;
+            if (double.TryParse(numero, out numeroParseado))
+            {
+                numeroParseado = Math.Abs(numeroParseado);
+                binarioRetornado = DecimalBinario(numeroParseado);
+            }
             return binarioRetornado;
         }
         public static double operator +(Numero n1, Numero n2)
         {
-            return 0;
+            return n1.numero + n2.numero;
         }
         public static double operator -(Numero n1, Numero n2)
         {
-            return 0;
+            return n1.numero - n2.numero;
         }
         public static double operator *(Numero n1, Numero n2)
         {
-            return 0;
+            return  n1.numero * n2.numero; ;
         }
         public static double operator /(Numero n1, Numero n2)
         {
-            return 0;
+            return n2.numero != 0 ? n1.numero/n2.numero : Double.MinValue;
         }
         private double ValidarNumero(string strNumero)
         {
-            double numeroRetornado = 0;
-            return numeroRetornado;
+            double numeroRetornado ;
+            bool isNumber = double.TryParse(strNumero, out numeroRetornado);
+
+            if (isNumber)
+                return numeroRetornado;
+            else
+                return 0;
         }
     }
 }

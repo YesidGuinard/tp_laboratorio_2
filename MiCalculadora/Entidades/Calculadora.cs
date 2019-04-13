@@ -10,7 +10,25 @@ namespace MiCalculadora
     {
         public double Operar(Numero num1, Numero num2, string operador)
         {
-            double resultado = Double.MinValue;
+            double resultado = 0;
+            string operadorValido = Calculadora.ValidarOperador(operador);
+
+            
+            switch (operadorValido)
+            {
+                case "-":
+                    resultado = num1 - num2;
+                    break;
+                case "+":
+                    resultado = num1 + num2;
+                    break;
+                case "*":
+                    resultado = num1 * num2;
+                    break;
+                case "/":
+                    resultado = num1 / num2;
+                    break;
+            }
             return resultado;
 
         }
@@ -18,6 +36,14 @@ namespace MiCalculadora
         private static string ValidarOperador(string operador)
         {
             string operadorDeRetorno = "+";
+
+            if (operador == "-")
+                operadorDeRetorno = "-";
+            else if (operador == "*")
+                operadorDeRetorno = "*";
+            else if (operador == "/")
+                operadorDeRetorno = "/";
+            
             return operadorDeRetorno;
         }
     }
