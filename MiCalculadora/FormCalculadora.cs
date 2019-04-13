@@ -24,6 +24,8 @@ namespace MiCalculadora
             string operacion = cmbOperador.Text;
             double resultado = Operar(operando1,operando2,operacion);
             lblResultado.Text = resultado.ToString();
+            btnConvertirABinario.Enabled = true;
+            btnConvertirADecimal.Enabled = false;
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -41,6 +43,8 @@ namespace MiCalculadora
             string numero = lblResultado.Text;
             Entidades.Numero resultado = new Numero();
             lblResultado.Text = resultado.DecimalBinario(numero);
+            btnConvertirABinario.Enabled = false;
+            btnConvertirADecimal.Enabled = true;
         }
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
@@ -48,6 +52,8 @@ namespace MiCalculadora
             string numero = lblResultado.Text;
             Entidades.Numero resultado = new Numero();
             lblResultado.Text = resultado.BinarioDecimal(numero);
+            btnConvertirABinario.Enabled = true;
+            btnConvertirADecimal.Enabled = false;
         }
 
         private void Limpiar()

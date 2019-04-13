@@ -77,7 +77,6 @@
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(391, 39);
             this.lblResultado.TabIndex = 0;
-            this.lblResultado.Text = ".";
             this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnOperar
