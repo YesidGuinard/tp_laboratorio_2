@@ -33,17 +33,21 @@ namespace MiCalculadora
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-
+            string numero = lblResultado.Text;
+            Entidades.Numero resultado = new Numero();
+            lblResultado.Text = resultado.DecimalBinario(numero);
         }
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-
+            string numero = lblResultado.Text;
+            Entidades.Numero resultado = new Numero();
+            lblResultado.Text = resultado.BinarioDecimal(numero);
         }
 
         private void Limpiar()
@@ -56,7 +60,6 @@ namespace MiCalculadora
 
         private static double Operar(string numero1, string numero2, string operador)
         {
-
             Numero num1 = new Numero(numero1);
             Numero num2 = new Numero(numero2);
 

@@ -51,21 +51,26 @@ namespace Entidades
         }
         public string DecimalBinario(double numero)
         {
-            string resultado = "Valor inválido";
-            
-            while (numero > 0)
+            string resultado = "";
+            if(numero == 0)
             {
-                resultado = (numero % 2).ToString() + resultado;
-                numero = (int)numero / 2;
+                resultado = "0";
             }
-
+            else
+            {
+                while (numero > 0)
+                {
+                    resultado = (numero % 2).ToString() + resultado;
+                    numero = (int)numero / 2;
+                }
+            }
             return resultado;
         }
         public string DecimalBinario(string numero)
         {
             string binarioRetornado = "Valor inválido";
-
             double numeroParseado;
+
             if (double.TryParse(numero, out numeroParseado))
             {
                 numeroParseado = Math.Abs(numeroParseado);
