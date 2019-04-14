@@ -9,6 +9,9 @@ namespace Entidades
     public class Numero
     {
         private double numero;
+        /// <summary>
+        /// Propiedad para setear atributo numero
+        /// </summary>
         public string SetNumero
         {
             set
@@ -16,20 +19,29 @@ namespace Entidades
                 this.numero = ValidarNumero(value);
             }
         }
-
+       
+        //Constructor por defecto. Inicializa el atributo numero en cero.
         public Numero()
         {
             this.numero = 0;
         }
+        /// <summary>
+        /// Contructor que recibe parametro tipo doblue y asigna este atributo usando sobrecarga
+        /// </summary>
+        /// <param name="numero">parametro</param>
         public Numero(double numero)
         {
-            this.SetNumero = numero.ToString();
+            this.SetNumero = numero.ToString(); // Se utiliza la propiedad para hacer validacion
         }
+        /// <summary>
+        /// Constructor  que recibe string y asigna la propiedad
+        /// </summary>
+        /// <param name="strNumero"></param>
         public Numero(string strNumero)
         {
             this.SetNumero = strNumero;
         }
-        
+
         /// <summary>
         /// Convierte Numero Binario a Decimal
         /// </summary>

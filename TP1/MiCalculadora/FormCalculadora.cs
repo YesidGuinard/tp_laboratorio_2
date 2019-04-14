@@ -19,13 +19,21 @@ namespace MiCalculadora
         
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            string operando1 = txtNumero1.Text;
-            string operando2 = txtNumero2.Text;
-            string operacion = cmbOperador.Text;
-            double resultado = Operar(operando1,operando2,operacion);
-            lblResultado.Text = resultado.ToString();
-            btnConvertirABinario.Enabled = true;
-            btnConvertirADecimal.Enabled = false;
+
+            if (txtNumero1.Text == "" || txtNumero2.Text == "" || cmbOperador.Text == "") //verificar elementos de operacion
+            {
+                MessageBox.Show(" Por favor ingresar datos y selecionar operacion!", "Msj");
+            }
+            else
+            {
+                string operando1 = txtNumero1.Text;
+                string operando2 = txtNumero2.Text;
+                string operacion = cmbOperador.Text;
+                double resultado = Operar(operando1, operando2, operacion);
+                lblResultado.Text = resultado.ToString();
+                btnConvertirABinario.Enabled = true;
+                btnConvertirADecimal.Enabled = false;
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -82,6 +90,9 @@ namespace MiCalculadora
             return Calculadora.Operar(num1, num2, operador);
         }
 
+        private void cmbOperador_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
