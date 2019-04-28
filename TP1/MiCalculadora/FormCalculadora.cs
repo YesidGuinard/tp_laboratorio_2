@@ -58,7 +58,7 @@ namespace MiCalculadora
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             string numero = lblResultado.Text;
-            Entidades.Numero resultado = new Numero();
+            Numero resultado = new Numero();
             lblResultado.Text = resultado.BinarioDecimal(numero);
             btnConvertirABinario.Enabled = true;
             btnConvertirADecimal.Enabled = false;
@@ -88,11 +88,6 @@ namespace MiCalculadora
             Numero num2 = new Numero(numero2);
 
             return Calculadora.Operar(num1, num2, operador);
-        }
-
-        private void cmbOperador_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

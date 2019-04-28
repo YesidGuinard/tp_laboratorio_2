@@ -68,7 +68,7 @@
             this.cmbOperador.Name = "cmbOperador";
             this.cmbOperador.Size = new System.Drawing.Size(110, 28);
             this.cmbOperador.TabIndex = 1;
-            this.cmbOperador.SelectedIndexChanged += new System.EventHandler(this.cmbOperador_SelectedIndexChanged);
+            this.cmbOperador.Text = "+";
             // 
             // lblResultado
             // 

@@ -21,17 +21,15 @@ namespace Entidades
         }
        
         //Constructor por defecto. Inicializa el atributo numero en cero.
-        public Numero()
+        public Numero():this(Convert.ToString(0))
         {
-            this.numero = 0;
         }
         /// <summary>
         /// Contructor que recibe parametro tipo doblue y asigna este atributo usando sobrecarga
         /// </summary>
         /// <param name="numero">parametro</param>
-        public Numero(double numero)
+        public Numero(double numero):this(numero.ToString())
         {
-            this.SetNumero = numero.ToString(); // Se utiliza la propiedad para hacer validacion
         }
         /// <summary>
         /// Constructor  que recibe string y asigna la propiedad
@@ -76,16 +74,18 @@ namespace Entidades
         public string DecimalBinario(double numero) // se sugiere que este metodo sea Privado
         {
             string resultado = "";
-            if(numero <= 0)
+            int numeroEntero;
+            numeroEntero = Math.Abs((int)numero);
+            if (numeroEntero == 0)
             {
                 resultado = "0";
             }
             else
             {
-                while (numero > 0)
+                while (numeroEntero > 0)
                 {
-                    resultado = (numero % 2).ToString() + resultado;
-                    numero = (long)numero / 2;
+                    resultado = (numeroEntero % 2).ToString() + resultado;
+                    numeroEntero = numeroEntero / 2;
                 }
             }
             return resultado;
@@ -103,7 +103,7 @@ namespace Entidades
 
             if (double.TryParse(numero, out numeroParseado))
             {
-                numeroParseado = Math.Abs(numeroParseado);
+                //numeroParseado = Math.Abs(numeroParseado);
                 binarioRetornado = DecimalBinario(numeroParseado);
             }
             return binarioRetornado;
