@@ -15,7 +15,7 @@ namespace Entidades
         /// <summary>
         /// Los dulces tienen 80 calorías
         /// </summary>
-        protected short CantidadCalorias
+        protected override sealed short CantidadCalorias
         {
             get
             {
@@ -23,17 +23,17 @@ namespace Entidades
             }
         }
 
-        private override sealed string Mostrar()
+        protected override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("DULCE");
-            sb.AppendLine(this.Mostrar());
-            sb.AppendLine("CALORIAS : {0}", this.CantidadCalorias);
+            sb.AppendLine(base.Mostrar());
+            sb.AppendFormat("CALORIAS : {0}", this.CantidadCalorias);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 
-            return sb;
+            return sb.ToString();
         }
     }
 }

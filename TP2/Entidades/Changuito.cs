@@ -9,10 +9,11 @@ namespace Entidades
     /// <summary>
     /// No podrá tener clases heredadas.
     /// </summary>
-    public class Changuito
+    public sealed class Changuito
     {
-        List<Producto> productos;
-        int espacioDisponible;
+        private List<Producto> productos;
+        private int espacioDisponible;
+
         public enum ETipo
         {
             Dulce, Leche, Snacks, Todos
@@ -23,7 +24,7 @@ namespace Entidades
         {
             this.productos = new List<Producto>();
         }
-        public Changuito(int espacioDisponible)
+        public Changuito(int espacioDisponible):this()
         {
             this.espacioDisponible = espacioDisponible;
         }
@@ -34,7 +35,7 @@ namespace Entidades
         /// Muestro el Changuito y TODOS los Productos
         /// </summary>
         /// <returns></returns>
-        public string ToString()
+        public override string ToString()
         {
             return Changuito.Mostrar(this, ETipo.Todos);
         }
@@ -74,7 +75,7 @@ namespace Entidades
                 }
             }
 
-            return sb;
+            return sb.ToString();
         }
         #endregion
 
@@ -87,7 +88,7 @@ namespace Entidades
         /// <returns></returns>
         public static Changuito operator +(Changuito c, Producto p)
         {
-            foreach (Producto v in c)
+            foreach (Producto v in c.productos)
             {
                 if (v == p)
                     return c;
@@ -104,10 +105,11 @@ namespace Entidades
         /// <returns></returns>
         public static Changuito operator -(Changuito c, Producto p)
         {
-            foreach (Producto v in c)
+            foreach (Producto v in c.productos)
             {
                 if (v == p)
                 {
+                    c.productos.Remove(p);
                     break;
                 }
             }
