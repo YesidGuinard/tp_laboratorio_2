@@ -50,7 +50,7 @@ namespace Entidades
         /// Publica todos los datos del Producto.
         /// </summary>
         /// <returns></returns>
-        protected internal virtual string Mostrar()
+        public virtual string Mostrar()
         {
             return (string)this;
         }

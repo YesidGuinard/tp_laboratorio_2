@@ -38,6 +38,7 @@ namespace Entidades
         public override string ToString()
         {
             return Changuito.Mostrar(this, ETipo.Todos);
+           
         }
         #endregion
 
@@ -50,7 +51,7 @@ namespace Entidades
         /// <param name="c">Elemento a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
-        public string Mostrar(Changuito c, ETipo tipo)
+        public static string Mostrar(Changuito c, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
 
@@ -61,14 +62,18 @@ namespace Entidades
                 switch (tipo)
                 {
                     case ETipo.Snacks:
-                        sb.AppendLine(v.Mostrar());
+                        if(v is Snacks)
+                            sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Dulce:
-                        sb.AppendLine(v.Mostrar());
+                        if (v is Dulce)
+                            sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Leche:
-                        sb.AppendLine(v.Mostrar());
+                        if (v is Leche)
+                            sb.AppendLine(v.Mostrar());
                         break;
+                 
                     default:
                         sb.AppendLine(v.Mostrar());
                         break;
@@ -88,13 +93,18 @@ namespace Entidades
         /// <returns></returns>
         public static Changuito operator +(Changuito c, Producto p)
         {
-            foreach (Producto v in c.productos)
+            if (c.espacioDisponible - c.productos.Count >= 1)
             {
-                if (v == p)
-                    return c;
-            }
+                foreach (Producto v in c.productos)
+                {
+                    if (v == p)
+                        return c;
+                }
 
-            c.productos.Add(p);
+                c.productos.Add(p);
+                
+            }
+            
             return c;
         }
         /// <summary>
