@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c495c84-c83e-496e-a4c8-2e185c81f909" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../TP1/.vs/TP1/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/.vs/TP1/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/.vs/TP1/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/.vs/TP1/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/.vs/TP1/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/.vs/TP1/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/Entidades/Numero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/Entidades/Numero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/Entidades/bin/Debug/Entidades.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/Entidades/bin/Debug/Entidades.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/Entidades/bin/Debug/Entidades.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/Entidades/bin/Debug/Entidades.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/Entidades/obj/Debug/Entidades.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/Entidades/obj/Debug/Entidades.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/Entidades/obj/Debug/Entidades.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/Entidades/obj/Debug/Entidades.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/FormCalculadora.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/FormCalculadora.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/FormCalculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/FormCalculadora.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/bin/Debug/Entidades.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/bin/Debug/Entidades.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/bin/Debug/Entidades.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/bin/Debug/Entidades.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/bin/Debug/MiCalculadora.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/bin/Debug/MiCalculadora.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/bin/Debug/MiCalculadora.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/bin/Debug/MiCalculadora.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/obj/Debug/MiCalculadora.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/obj/Debug/MiCalculadora.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/obj/Debug/MiCalculadora.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/obj/Debug/MiCalculadora.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/obj/Debug/MiCalculadora.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/obj/Debug/MiCalculadora.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/MiCalculadora/obj/Debug/MiCalculadora.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/MiCalculadora/obj/Debug/MiCalculadora.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entidades/obj/Debug/Entidades.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entidades/obj/Debug/Entidades.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/obj/Debug/TP2.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/obj/Debug/TP2.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +12,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TP2/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
+            <state relative-caret-position="32">
               <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
                 <marker date="1556376561408" expanded="false" signature="6:132" ph="..." />
@@ -48,31 +32,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Entidades/Producto.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
+            <state relative-caret-position="512">
               <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
               <folding>
-                <marker date="1556380564787" expanded="false" signature="6:141" ph="..." />
-                <marker date="1556380564787" expanded="true" signature="162:3104" ph="{...}" />
-                <marker date="1556380564787" expanded="true" signature="169:288" ph="/// La clase Producto no deberá permitir que se instancien elementos de este tipo. ... " />
-                <marker date="1556380564787" expanded="true" signature="323:3102" ph="{...}" />
-                <marker date="1556380564787" expanded="true" signature="356:503" ph="{...}" />
-                <marker date="1556380564787" expanded="false" signature="513:669" ph="Atributos" />
-                <marker date="1556380564787" expanded="true" signature="679:784" ph="/// ReadOnly: Retornará la cantidad de calorias del producto ... " />
-                <marker date="1556380564787" expanded="true" signature="860:1131" ph="Constructores" />
-                <marker date="1556380564787" expanded="true" signature="963:1112" ph="{...}" />
-                <marker date="1556380564787" expanded="false" signature="1141:1399" ph="Metodos" />
-                <marker date="1556380564787" expanded="true" signature="1165:1283" ph="/// Publica todos los datos del Producto. ... " />
-                <marker date="1556380564787" expanded="true" signature="1326:1379" ph="{...}" />
-                <marker date="1556380564787" expanded="false" signature="1409:3096" ph="Sobrecargas" />
-                <marker date="1556380564787" expanded="true" signature="1438:1555" ph="/// ... " />
-                <marker date="1556380564787" expanded="true" signature="1614:2193" ph="{...}" />
-                <marker date="1556380564787" expanded="true" signature="1651:1730" ph="{...}" />
-                <marker date="1556380564787" expanded="true" signature="1747:2182" ph="{...}" />
-                <marker date="1556380564787" expanded="true" signature="2203:2424" ph="/// Dos productos son iguales si comparten el mismo código de barras ... " />
-                <marker date="1556380564787" expanded="true" signature="2489:2702" ph="{...}" />
-                <marker date="1556380564787" expanded="true" signature="2512:2631" ph="/* Debug.Assert(v1 != null, nameof(v1) + &quot; != null&quot;); ... */" />
-                <marker date="1556380564787" expanded="true" signature="2711:2930" ph="/// Dos productos son distintos si su código de barras es distinto ... " />
-                <marker date="1556380564787" expanded="true" signature="2995:3077" ph="{...}" />
+                <marker date="1556920409361" expanded="false" signature="6:141" ph="..." />
+                <marker date="1556920409361" expanded="true" signature="162:3101" ph="{...}" />
+                <marker date="1556920409361" expanded="true" signature="169:288" ph="/// La clase Producto no deberá permitir que se instancien elementos de este tipo. ... " />
+                <marker date="1556920409361" expanded="true" signature="323:3099" ph="{...}" />
+                <marker date="1556920409361" expanded="true" signature="356:503" ph="{...}" />
+                <marker date="1556920409361" expanded="false" signature="513:669" ph="Atributos" />
+                <marker date="1556920409361" expanded="true" signature="679:784" ph="/// ReadOnly: Retornará la cantidad de calorias del producto ... " />
+                <marker date="1556920409361" expanded="true" signature="860:1131" ph="Constructores" />
+                <marker date="1556920409361" expanded="true" signature="963:1112" ph="{...}" />
+                <marker date="1556920409361" expanded="false" signature="1141:1396" ph="Metodos" />
+                <marker date="1556920409361" expanded="true" signature="1165:1283" ph="/// Publica todos los datos del Producto. ... " />
+                <marker date="1556920409361" expanded="true" signature="1323:1376" ph="{...}" />
+                <marker date="1556920409361" expanded="false" signature="1406:3093" ph="Sobrecargas" />
+                <marker date="1556920409361" expanded="true" signature="1435:1552" ph="/// ... " />
+                <marker date="1556920409361" expanded="true" signature="1611:2190" ph="{...}" />
+                <marker date="1556920409361" expanded="true" signature="1648:1727" ph="{...}" />
+                <marker date="1556920409361" expanded="true" signature="1744:2179" ph="{...}" />
+                <marker date="1556920409361" expanded="true" signature="2200:2421" ph="/// Dos productos son iguales si comparten el mismo código de barras ... " />
+                <marker date="1556920409361" expanded="true" signature="2486:2699" ph="{...}" />
+                <marker date="1556920409361" expanded="true" signature="2509:2628" ph="/* Debug.Assert(v1 != null, nameof(v1) + &quot; != null&quot;); ... */" />
+                <marker date="1556920409361" expanded="true" signature="2708:2927" ph="/// Dos productos son distintos si su código de barras es distinto ... " />
+                <marker date="1556920409361" expanded="true" signature="2992:3074" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -81,17 +65,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Entidades/Dulce.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="105">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding>
-                <marker date="1556380604680" expanded="false" signature="6:115" ph="..." />
-                <marker date="1556380604680" expanded="true" signature="136:914" ph="{...}" />
-                <marker date="1556380604680" expanded="true" signature="172:912" ph="{...}" />
-                <marker date="1556380604680" expanded="true" signature="289:309" ph="{...}" />
-                <marker date="1556380604680" expanded="true" signature="319:397" ph="/// Los dulces tienen 80 calorías ... " />
-                <marker date="1556380604680" expanded="true" signature="438:529" ph="{...}" />
-                <marker date="1556380604680" expanded="true" signature="464:519" ph="{...}" />
-                <marker date="1556380604680" expanded="true" signature="579:906" ph="{...}" />
+                <marker date="1556920409357" expanded="false" signature="6:115" ph="..." />
+                <marker date="1556920409357" expanded="true" signature="136:935" ph="{...}" />
+                <marker date="1556920409357" expanded="true" signature="172:933" ph="{...}" />
+                <marker date="1556920409357" expanded="true" signature="289:309" ph="{...}" />
+                <marker date="1556920409357" expanded="true" signature="319:397" ph="/// Los dulces tienen 80 calorías ... " />
+                <marker date="1556920409357" expanded="true" signature="454:545" ph="{...}" />
+                <marker date="1556920409357" expanded="true" signature="480:535" ph="{...}" />
+                <marker date="1556920409357" expanded="true" signature="587:927" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -100,18 +84,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Entidades/Leche.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
+            <state relative-caret-position="48">
               <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
-                <marker date="1556376522394" expanded="false" signature="6:115" ph="..." />
-                <marker date="1556376522394" expanded="true" signature="136:1291" ph="{...}" />
-                <marker date="1556376522394" expanded="true" signature="165:1289" ph="{...}" />
-                <marker date="1556376522394" expanded="true" signature="250:453" ph="/// Por defecto, TIPO será ENTERA ... " />
-                <marker date="1556376522394" expanded="true" signature="566:619" ph="{...}" />
-                <marker date="1556376522394" expanded="true" signature="629:707" ph="/// Las leches tienen 20 calorías ... " />
-                <marker date="1556376522394" expanded="true" signature="757:867" ph="{...}" />
-                <marker date="1556376522394" expanded="true" signature="783:857" ph="{...}" />
-                <marker date="1556376522394" expanded="true" signature="916:1283" ph="{...}" />
+                <marker date="1556920409359" expanded="false" signature="6:115" ph="..." />
+                <marker date="1556920409359" expanded="true" signature="136:1548" ph="{...}" />
+                <marker date="1556920409359" expanded="true" signature="172:1546" ph="{...}" />
+                <marker date="1556920409359" expanded="false" signature="236:292" ph="Atributos" />
+                <marker date="1556920409359" expanded="true" signature="302:512" ph="/// Por defecto, TIPO será ENTERA ... " />
+                <marker date="1556920409359" expanded="true" signature="639:697" ph="{...}" />
+                <marker date="1556920409359" expanded="true" signature="828:878" ph="{...}" />
+                <marker date="1556920409359" expanded="true" signature="888:966" ph="/// Las leches tienen 20 calorías ... " />
+                <marker date="1556920409359" expanded="true" signature="1016:1107" ph="{...}" />
+                <marker date="1556920409359" expanded="true" signature="1042:1097" ph="{...}" />
+                <marker date="1556920409359" expanded="true" signature="1150:1540" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -120,33 +106,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Entidades/Changuito.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="40" column="18" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="464">
+              <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
               <folding>
-                <marker date="1556375561964" expanded="false" signature="6:115" ph="..." />
-                <marker date="1556375561964" expanded="true" signature="136:3355" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="143:216" ph="/// No podrá tener clases heredadas. ... " />
-                <marker date="1556375561964" expanded="true" signature="243:3353" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="340:400" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="410:675" ph="&quot;Constructores&quot;" />
-                <marker date="1556375561964" expanded="true" signature="461:532" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="580:656" ph="{...}" />
-                <marker date="1556375561964" expanded="false" signature="685:967" ph="&quot;Sobrecargas&quot;" />
-                <marker date="1556375561964" expanded="true" signature="715:838" ph="/// Muestro el Changuito y TODOS los Productos ... " />
-                <marker date="1556375561964" expanded="true" signature="871:948" ph="{...}" />
-                <marker date="1556375561964" expanded="false" signature="977:2271" ph="&quot;Métodos&quot;" />
-                <marker date="1556375561964" expanded="true" signature="1004:1319" ph="/// Expone los datos del elemento y su lista (incluidas sus herencias) ... " />
-                <marker date="1556375561964" expanded="true" signature="1374:2252" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="1648:2218" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="1692:2204" ph="{...}" />
-                <marker date="1556375561964" expanded="false" signature="2281:3347" ph="&quot;Operadores&quot;" />
-                <marker date="1556375561964" expanded="true" signature="2310:2548" ph="/// Agregará un elemento a la lista ... " />
-                <marker date="1556375561964" expanded="true" signature="2616:2815" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="2664:2750" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="2824:3060" ph="/// Quitará un elemento de la lista ... " />
-                <marker date="1556375561964" expanded="true" signature="3128:3328" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="3176:3295" ph="{...}" />
-                <marker date="1556375561964" expanded="true" signature="3218:3281" ph="{...}" />
+                <marker date="1556920409355" expanded="false" signature="6:115" ph="..." />
+                <marker date="1556920409355" expanded="true" signature="136:3782" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="143:216" ph="/// No podrá tener clases heredadas. ... " />
+                <marker date="1556920409355" expanded="true" signature="250:3780" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="364:424" ph="{...}" />
+                <marker date="1556920409355" expanded="false" signature="434:706" ph="&quot;Constructores&quot;" />
+                <marker date="1556920409355" expanded="true" signature="485:556" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="611:687" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="716:1019" ph="&quot;Sobrecargas&quot;" />
+                <marker date="1556920409355" expanded="true" signature="746:869" ph="/// Muestro el Changuito y TODOS los Productos ... " />
+                <marker date="1556920409355" expanded="true" signature="911:1000" ph="{...}" />
+                <marker date="1556920409355" expanded="false" signature="1029:2491" ph="&quot;Métodos&quot;" />
+                <marker date="1556920409355" expanded="true" signature="1056:1371" ph="/// Expone los datos del elemento y su lista (incluidas sus herencias) ... " />
+                <marker date="1556920409355" expanded="true" signature="1433:2472" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="1707:2427" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="1751:2413" ph="{...}" />
+                <marker date="1556920409355" expanded="false" signature="2501:3774" ph="&quot;Operadores&quot;" />
+                <marker date="1556920409355" expanded="true" signature="2530:2768" ph="/// Agregará un elemento a la lista ... " />
+                <marker date="1556920409355" expanded="true" signature="2836:3189" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="2908:3144" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="2974:3076" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="3198:3434" ph="/// Quitará un elemento de la lista ... " />
+                <marker date="1556920409355" expanded="true" signature="3502:3755" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="3560:3722" ph="{...}" />
+                <marker date="1556920409355" expanded="true" signature="3602:3708" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -176,43 +163,17 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="653" />
-    <option name="height" value="687" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TP2" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TP2" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Entidades" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TP2" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Entidades" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Properties" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="AssemblyExplorer" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
@@ -266,11 +227,12 @@
       <option name="presentableId" value="Default" />
       <updated>1556377524077</updated>
       <workItem from="1556377528582" duration="3655000" />
+      <workItem from="1557097230269" duration="247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3655000" />
+    <option name="totallyTimeSpent" value="3902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,23 +244,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.3524452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Performance Profiler" />
-      <window_info anchor="bottom" id="Build" weight="0.32972974" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -306,19 +259,28 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,7 +323,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TP2/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
+        <state relative-caret-position="32">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
             <marker date="1556376561408" expanded="false" signature="6:132" ph="..." />
@@ -375,99 +337,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Entidades/Producto.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
+        <state relative-caret-position="512">
           <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
-            <marker date="1556380564787" expanded="false" signature="6:141" ph="..." />
-            <marker date="1556380564787" expanded="true" signature="162:3104" ph="{...}" />
-            <marker date="1556380564787" expanded="true" signature="169:288" ph="/// La clase Producto no deberá permitir que se instancien elementos de este tipo. ... " />
-            <marker date="1556380564787" expanded="true" signature="323:3102" ph="{...}" />
-            <marker date="1556380564787" expanded="true" signature="356:503" ph="{...}" />
-            <marker date="1556380564787" expanded="false" signature="513:669" ph="Atributos" />
-            <marker date="1556380564787" expanded="true" signature="679:784" ph="/// ReadOnly: Retornará la cantidad de calorias del producto ... " />
-            <marker date="1556380564787" expanded="true" signature="860:1131" ph="Constructores" />
-            <marker date="1556380564787" expanded="true" signature="963:1112" ph="{...}" />
-            <marker date="1556380564787" expanded="false" signature="1141:1399" ph="Metodos" />
-            <marker date="1556380564787" expanded="true" signature="1165:1283" ph="/// Publica todos los datos del Producto. ... " />
-            <marker date="1556380564787" expanded="true" signature="1326:1379" ph="{...}" />
-            <marker date="1556380564787" expanded="false" signature="1409:3096" ph="Sobrecargas" />
-            <marker date="1556380564787" expanded="true" signature="1438:1555" ph="/// ... " />
-            <marker date="1556380564787" expanded="true" signature="1614:2193" ph="{...}" />
-            <marker date="1556380564787" expanded="true" signature="1651:1730" ph="{...}" />
-            <marker date="1556380564787" expanded="true" signature="1747:2182" ph="{...}" />
-            <marker date="1556380564787" expanded="true" signature="2203:2424" ph="/// Dos productos son iguales si comparten el mismo código de barras ... " />
-            <marker date="1556380564787" expanded="true" signature="2489:2702" ph="{...}" />
-            <marker date="1556380564787" expanded="true" signature="2512:2631" ph="/* Debug.Assert(v1 != null, nameof(v1) + &quot; != null&quot;); ... */" />
-            <marker date="1556380564787" expanded="true" signature="2711:2930" ph="/// Dos productos son distintos si su código de barras es distinto ... " />
-            <marker date="1556380564787" expanded="true" signature="2995:3077" ph="{...}" />
+            <marker date="1556920409361" expanded="false" signature="6:141" ph="..." />
+            <marker date="1556920409361" expanded="true" signature="162:3101" ph="{...}" />
+            <marker date="1556920409361" expanded="true" signature="169:288" ph="/// La clase Producto no deberá permitir que se instancien elementos de este tipo. ... " />
+            <marker date="1556920409361" expanded="true" signature="323:3099" ph="{...}" />
+            <marker date="1556920409361" expanded="true" signature="356:503" ph="{...}" />
+            <marker date="1556920409361" expanded="false" signature="513:669" ph="Atributos" />
+            <marker date="1556920409361" expanded="true" signature="679:784" ph="/// ReadOnly: Retornará la cantidad de calorias del producto ... " />
+            <marker date="1556920409361" expanded="true" signature="860:1131" ph="Constructores" />
+            <marker date="1556920409361" expanded="true" signature="963:1112" ph="{...}" />
+            <marker date="1556920409361" expanded="false" signature="1141:1396" ph="Metodos" />
+            <marker date="1556920409361" expanded="true" signature="1165:1283" ph="/// Publica todos los datos del Producto. ... " />
+            <marker date="1556920409361" expanded="true" signature="1323:1376" ph="{...}" />
+            <marker date="1556920409361" expanded="false" signature="1406:3093" ph="Sobrecargas" />
+            <marker date="1556920409361" expanded="true" signature="1435:1552" ph="/// ... " />
+            <marker date="1556920409361" expanded="true" signature="1611:2190" ph="{...}" />
+            <marker date="1556920409361" expanded="true" signature="1648:1727" ph="{...}" />
+            <marker date="1556920409361" expanded="true" signature="1744:2179" ph="{...}" />
+            <marker date="1556920409361" expanded="true" signature="2200:2421" ph="/// Dos productos son iguales si comparten el mismo código de barras ... " />
+            <marker date="1556920409361" expanded="true" signature="2486:2699" ph="{...}" />
+            <marker date="1556920409361" expanded="true" signature="2509:2628" ph="/* Debug.Assert(v1 != null, nameof(v1) + &quot; != null&quot;); ... */" />
+            <marker date="1556920409361" expanded="true" signature="2708:2927" ph="/// Dos productos son distintos si su código de barras es distinto ... " />
+            <marker date="1556920409361" expanded="true" signature="2992:3074" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Entidades/Leche.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
+        <state relative-caret-position="48">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
-            <marker date="1556376522394" expanded="false" signature="6:115" ph="..." />
-            <marker date="1556376522394" expanded="true" signature="136:1291" ph="{...}" />
-            <marker date="1556376522394" expanded="true" signature="165:1289" ph="{...}" />
-            <marker date="1556376522394" expanded="true" signature="250:453" ph="/// Por defecto, TIPO será ENTERA ... " />
-            <marker date="1556376522394" expanded="true" signature="566:619" ph="{...}" />
-            <marker date="1556376522394" expanded="true" signature="629:707" ph="/// Las leches tienen 20 calorías ... " />
-            <marker date="1556376522394" expanded="true" signature="757:867" ph="{...}" />
-            <marker date="1556376522394" expanded="true" signature="783:857" ph="{...}" />
-            <marker date="1556376522394" expanded="true" signature="916:1283" ph="{...}" />
+            <marker date="1556920409359" expanded="false" signature="6:115" ph="..." />
+            <marker date="1556920409359" expanded="true" signature="136:1548" ph="{...}" />
+            <marker date="1556920409359" expanded="true" signature="172:1546" ph="{...}" />
+            <marker date="1556920409359" expanded="false" signature="236:292" ph="Atributos" />
+            <marker date="1556920409359" expanded="true" signature="302:512" ph="/// Por defecto, TIPO será ENTERA ... " />
+            <marker date="1556920409359" expanded="true" signature="639:697" ph="{...}" />
+            <marker date="1556920409359" expanded="true" signature="828:878" ph="{...}" />
+            <marker date="1556920409359" expanded="true" signature="888:966" ph="/// Las leches tienen 20 calorías ... " />
+            <marker date="1556920409359" expanded="true" signature="1016:1107" ph="{...}" />
+            <marker date="1556920409359" expanded="true" signature="1042:1097" ph="{...}" />
+            <marker date="1556920409359" expanded="true" signature="1150:1540" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Entidades/Changuito.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="40" column="18" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="464">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
           <folding>
-            <marker date="1556375561964" expanded="false" signature="6:115" ph="..." />
-            <marker date="1556375561964" expanded="true" signature="136:3355" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="143:216" ph="/// No podrá tener clases heredadas. ... " />
-            <marker date="1556375561964" expanded="true" signature="243:3353" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="340:400" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="410:675" ph="&quot;Constructores&quot;" />
-            <marker date="1556375561964" expanded="true" signature="461:532" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="580:656" ph="{...}" />
-            <marker date="1556375561964" expanded="false" signature="685:967" ph="&quot;Sobrecargas&quot;" />
-            <marker date="1556375561964" expanded="true" signature="715:838" ph="/// Muestro el Changuito y TODOS los Productos ... " />
-            <marker date="1556375561964" expanded="true" signature="871:948" ph="{...}" />
-            <marker date="1556375561964" expanded="false" signature="977:2271" ph="&quot;Métodos&quot;" />
-            <marker date="1556375561964" expanded="true" signature="1004:1319" ph="/// Expone los datos del elemento y su lista (incluidas sus herencias) ... " />
-            <marker date="1556375561964" expanded="true" signature="1374:2252" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="1648:2218" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="1692:2204" ph="{...}" />
-            <marker date="1556375561964" expanded="false" signature="2281:3347" ph="&quot;Operadores&quot;" />
-            <marker date="1556375561964" expanded="true" signature="2310:2548" ph="/// Agregará un elemento a la lista ... " />
-            <marker date="1556375561964" expanded="true" signature="2616:2815" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="2664:2750" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="2824:3060" ph="/// Quitará un elemento de la lista ... " />
-            <marker date="1556375561964" expanded="true" signature="3128:3328" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="3176:3295" ph="{...}" />
-            <marker date="1556375561964" expanded="true" signature="3218:3281" ph="{...}" />
+            <marker date="1556920409355" expanded="false" signature="6:115" ph="..." />
+            <marker date="1556920409355" expanded="true" signature="136:3782" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="143:216" ph="/// No podrá tener clases heredadas. ... " />
+            <marker date="1556920409355" expanded="true" signature="250:3780" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="364:424" ph="{...}" />
+            <marker date="1556920409355" expanded="false" signature="434:706" ph="&quot;Constructores&quot;" />
+            <marker date="1556920409355" expanded="true" signature="485:556" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="611:687" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="716:1019" ph="&quot;Sobrecargas&quot;" />
+            <marker date="1556920409355" expanded="true" signature="746:869" ph="/// Muestro el Changuito y TODOS los Productos ... " />
+            <marker date="1556920409355" expanded="true" signature="911:1000" ph="{...}" />
+            <marker date="1556920409355" expanded="false" signature="1029:2491" ph="&quot;Métodos&quot;" />
+            <marker date="1556920409355" expanded="true" signature="1056:1371" ph="/// Expone los datos del elemento y su lista (incluidas sus herencias) ... " />
+            <marker date="1556920409355" expanded="true" signature="1433:2472" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="1707:2427" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="1751:2413" ph="{...}" />
+            <marker date="1556920409355" expanded="false" signature="2501:3774" ph="&quot;Operadores&quot;" />
+            <marker date="1556920409355" expanded="true" signature="2530:2768" ph="/// Agregará un elemento a la lista ... " />
+            <marker date="1556920409355" expanded="true" signature="2836:3189" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="2908:3144" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="2974:3076" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="3198:3434" ph="/// Quitará un elemento de la lista ... " />
+            <marker date="1556920409355" expanded="true" signature="3502:3755" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="3560:3722" ph="{...}" />
+            <marker date="1556920409355" expanded="true" signature="3602:3708" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Entidades/Dulce.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="105">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding>
-            <marker date="1556380604680" expanded="false" signature="6:115" ph="..." />
-            <marker date="1556380604680" expanded="true" signature="136:914" ph="{...}" />
-            <marker date="1556380604680" expanded="true" signature="172:912" ph="{...}" />
-            <marker date="1556380604680" expanded="true" signature="289:309" ph="{...}" />
-            <marker date="1556380604680" expanded="true" signature="319:397" ph="/// Los dulces tienen 80 calorías ... " />
-            <marker date="1556380604680" expanded="true" signature="438:529" ph="{...}" />
-            <marker date="1556380604680" expanded="true" signature="464:519" ph="{...}" />
-            <marker date="1556380604680" expanded="true" signature="579:906" ph="{...}" />
+            <marker date="1556920409357" expanded="false" signature="6:115" ph="..." />
+            <marker date="1556920409357" expanded="true" signature="136:935" ph="{...}" />
+            <marker date="1556920409357" expanded="true" signature="172:933" ph="{...}" />
+            <marker date="1556920409357" expanded="true" signature="289:309" ph="{...}" />
+            <marker date="1556920409357" expanded="true" signature="319:397" ph="/// Los dulces tienen 80 calorías ... " />
+            <marker date="1556920409357" expanded="true" signature="454:545" ph="{...}" />
+            <marker date="1556920409357" expanded="true" signature="480:535" ph="{...}" />
+            <marker date="1556920409357" expanded="true" signature="587:927" ph="{...}" />
           </folding>
         </state>
       </provider>
