@@ -8,3 +8,13 @@ C:\Users\Loli\Documents\repo\tp_laboratorio_2\TP2\TP2\bin\Debug\Entidades.pdb
 C:\Users\Loli\Documents\repo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.csproj.CopyComplete
 C:\Users\Loli\Documents\repo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.exe
 C:\Users\Loli\Documents\repo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.pdb
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\bin\Debug\TP2.exe.config
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\bin\Debug\TP2.exe
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\bin\Debug\TP2.pdb
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\bin\Debug\Entidades.dll
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\bin\Debug\Entidades.pdb
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.csprojAssemblyReference.cache
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.csproj.CoreCompileInputs.cache
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.csproj.CopyComplete
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.exe
+G:\githubRepo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.pdb

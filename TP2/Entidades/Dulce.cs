@@ -13,7 +13,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Los dulces tienen 80 calorías
+        /// Los dulces tienen 80 calorías.
         /// </summary>
         protected override sealed short CantidadCalorias
         {
@@ -22,7 +22,10 @@ namespace Entidades
                 return 80;
             }
         }
-
+        /// <summary>
+        /// Override del metodo Mostrar producto.
+        /// </summary>
+        /// <returns></returns>
         public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

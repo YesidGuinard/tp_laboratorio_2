@@ -10,12 +10,12 @@ namespace TP2
     {
         static void Main(string[] args)
         {
-            // Configuración de la pantalla
+            // Configuración de la pantalla.
             Console.SetWindowPosition(0, 0);
             Console.SetWindowSize(Console.LargestWindowWidth / 2, Console.LargestWindowHeight - 2);
 
             // Nombre del alumno
-            //Console.
+            Console.Title = "TP2 YESID GUINARD 2C";
 
             Changuito changoDeCompras = new Changuito(6);
 
@@ -64,6 +64,7 @@ namespace TP2
             Console.ReadKey();
             Console.Clear();
 
+            
             // Muestro solo Snacks
             Console.WriteLine(Changuito.Mostrar(changoDeCompras, Changuito.ETipo.Snacks));
             Console.WriteLine("<-------------PRESIONE UNA TECLA PARA SALIR------------->");

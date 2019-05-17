@@ -22,7 +22,10 @@ namespace Entidades
                 return 104;
             }
         }
-
+        /// <summary>
+        /// Override del metodo Mostrar producto.
+        /// </summary>
+        /// <returns></returns>
         public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

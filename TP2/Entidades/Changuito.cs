@@ -86,7 +86,7 @@ namespace Entidades
 
         #region "Operadores"
         /// <summary>
-        /// Agregará un elemento a la lista
+        /// Agregará un elemento a la lista.
         /// </summary>
         /// <param name="c">Objeto donde se agregará el elemento</param>
         /// <param name="p">Objeto a agregar</param>

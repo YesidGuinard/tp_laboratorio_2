@@ -14,7 +14,7 @@ namespace Entidades
         #endregion
 
         /// <summary>
-        /// Por defecto, TIPO será ENTERA
+        /// Por defecto, tipo entero.
         /// </summary>
         /// <param name="marca"></param>
         /// <param name="codigoDeBarras"></param>
@@ -42,6 +42,10 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Override del metodo Mostrar producto.
+        /// </summary>
+        /// <returns></returns>
         public override  string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

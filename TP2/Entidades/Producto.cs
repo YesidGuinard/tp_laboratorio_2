@@ -60,7 +60,7 @@ namespace Entidades
         #region Sobrecargas
 
         /// <summary>
-        ///
+        /// Devuelve toda la información de producto
         /// </summary>
         /// <param name="p"></param>
         /// <returns></returns>
@@ -83,19 +83,17 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Dos productos son iguales si comparten el mismo código de barras
+        /// Dos productos son iguales si comparten el mismo código.
         /// </summary>
         /// <param name="v1"></param>
         /// <param name="v2"></param>
         /// <returns></returns>
         public static bool operator ==(Producto v1, Producto v2)
         {
-            // Debug.Assert(v1 != null, nameof(v1) + " != null");
-            // Debug.Assert(v2 != null, nameof(v2) + " != null");
             return (v1.codigoDeBarras == v2.codigoDeBarras);
         }
         /// <summary>
-        /// Dos productos son distintos si su código de barras es distinto
+        /// Dos productos son distintos si su código es distinto
         /// </summary>
         /// <param name="v1"></param>
         /// <param name="v2"></param>
