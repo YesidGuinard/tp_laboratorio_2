@@ -18,3 +18,13 @@ G:\githubRepo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.csproj.CoreCompileInputs.ca
 G:\githubRepo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.csproj.CopyComplete
 G:\githubRepo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.exe
 G:\githubRepo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.pdb
+E:\repo\tp_laboratorio_2\TP2\TP2\bin\Debug\TP2.exe.config
+E:\repo\tp_laboratorio_2\TP2\TP2\bin\Debug\TP2.exe
+E:\repo\tp_laboratorio_2\TP2\TP2\bin\Debug\TP2.pdb
+E:\repo\tp_laboratorio_2\TP2\TP2\bin\Debug\Entidades.dll
+E:\repo\tp_laboratorio_2\TP2\TP2\bin\Debug\Entidades.pdb
+E:\repo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.csprojAssemblyReference.cache
+E:\repo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.csproj.CoreCompileInputs.cache
+E:\repo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.csproj.CopyComplete
+E:\repo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.exe
+E:\repo\tp_laboratorio_2\TP2\TP2\obj\Debug\TP2.pdb

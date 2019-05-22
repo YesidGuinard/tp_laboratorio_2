@@ -16,7 +16,6 @@ namespace TP2
 
             // Nombre del alumno
             Console.Title = "TP2 YESID GUINARD 2C";
-
             Changuito changoDeCompras = new Changuito(6);
 
             Dulce c1 = new Dulce(Producto.EMarca.Sancor, "ASD012", ConsoleColor.Black);
@@ -46,11 +45,15 @@ namespace TP2
 
             // Quito un item y muestro
             changoDeCompras -= c1;
+            changoDeCompras -= new Dulce(Producto.EMarca.Ilolay, "ASD913", ConsoleColor.Red);
 
             Console.WriteLine(changoDeCompras.ToString());
             Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
             Console.ReadKey();
             Console.Clear();
+
+            // Vuelvo a agregar c2
+            changoDeCompras += c2;
 
             // Muestro solo Dulces
             Console.WriteLine(Changuito.Mostrar(changoDeCompras, Changuito.ETipo.Dulce));
@@ -64,7 +67,6 @@ namespace TP2
             Console.ReadKey();
             Console.Clear();
 
-            
             // Muestro solo Snacks
             Console.WriteLine(Changuito.Mostrar(changoDeCompras, Changuito.ETipo.Snacks));
             Console.WriteLine("<-------------PRESIONE UNA TECLA PARA SALIR------------->");

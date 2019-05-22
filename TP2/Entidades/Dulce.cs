@@ -8,14 +8,14 @@ namespace Entidades
 {
     public class Dulce : Producto
     {
-        public Dulce(EMarca marca, string codigoDeBarras, ConsoleColor color):base(codigoDeBarras,marca,color)
+        public Dulce(EMarca marca, string codigoDeBarras, ConsoleColor color) : base(codigoDeBarras, marca, color)
         {
         }
 
         /// <summary>
         /// Los dulces tienen 80 calorías.
         /// </summary>
-        protected override sealed short CantidadCalorias
+        protected override short CantidadCalorias
         {
             get
             {

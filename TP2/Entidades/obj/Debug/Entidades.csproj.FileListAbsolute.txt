@@ -27,3 +27,5 @@ G:\githubRepo\tp_laboratorio_2\TP2\Entidades\obj\Debug\Entidades.csprojAssemblyR
 G:\githubRepo\tp_laboratorio_2\TP2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 G:\githubRepo\tp_laboratorio_2\TP2\Entidades\obj\Debug\Entidades.dll
 G:\githubRepo\tp_laboratorio_2\TP2\Entidades\obj\Debug\Entidades.pdb
+E:\repo\tp_laboratorio_2\TP2\Entidades\bin\Debug\Entidades.dll
+E:\repo\tp_laboratorio_2\TP2\Entidades\bin\Debug\Entidades.pdb

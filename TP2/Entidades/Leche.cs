@@ -10,7 +10,7 @@ namespace Entidades
     {
         public enum ETipo { Entera, Descremada }
         #region Atributos
-        ETipo tipo;
+        private ETipo tipo;
         #endregion
 
         /// <summary>
@@ -20,12 +20,12 @@ namespace Entidades
         /// <param name="codigoDeBarras"></param>
         /// <param name="color"></param>
         public Leche(EMarca marca, string codigoDeBarras, ConsoleColor color)
-            : base(codigoDeBarras, marca, color)
+            : this(marca, codigoDeBarras, color, ETipo.Entera)
         {
-            this.tipo = ETipo.Entera;
+
         }
 
-        public Leche(EMarca marca, string codigoDeBarras, ConsoleColor color,ETipo tipo)
+        public Leche(EMarca marca, string codigoDeBarras, ConsoleColor color, ETipo tipo)
     : base(codigoDeBarras, marca, color)
         {
             this.tipo = tipo;
@@ -46,7 +46,7 @@ namespace Entidades
         /// Override del metodo Mostrar producto.
         /// </summary>
         /// <returns></returns>
-        public override  string Mostrar()
+        public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 

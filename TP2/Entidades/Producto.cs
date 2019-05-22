@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,15 +11,7 @@ namespace Entidades
     /// </summary>
     public abstract class Producto
     {
-        public enum EMarca
-        {
-            Serenisima,
-            Campagnola,
-            Arcor,
-            Ilolay,
-            Sancor,
-            Pepsico
-        }
+        public enum EMarca { Serenisima, Campagnola, Arcor, Ilolay, Sancor, Pepsico }
 
         #region Atributos
         private string codigoDeBarras;
@@ -31,8 +22,7 @@ namespace Entidades
         /// <summary>
         /// ReadOnly: Retornará la cantidad de calorias del producto
         /// </summary>
-        protected abstract short CantidadCalorias
-        { get;}
+        protected abstract short CantidadCalorias { get; }
 
         #region Constructores
 
@@ -43,7 +33,7 @@ namespace Entidades
             this.colorPrimarioEmpaque = color;
         }
 
-       #endregion
+        #endregion
 
         #region Metodos
         /// <summary>
@@ -100,7 +90,7 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator !=(Producto v1, Producto v2)
         {
-            return !(v1.codigoDeBarras == v2.codigoDeBarras);
+            return !(v1 == v2);
         }
         #endregion
     }

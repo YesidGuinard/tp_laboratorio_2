@@ -24,7 +24,7 @@ namespace Entidades
         {
             this.productos = new List<Producto>();
         }
-        public Changuito(int espacioDisponible):this()
+        public Changuito(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
         }
@@ -38,7 +38,7 @@ namespace Entidades
         public override string ToString()
         {
             return Changuito.Mostrar(this, ETipo.Todos);
-           
+
         }
         #endregion
 
@@ -62,19 +62,22 @@ namespace Entidades
                 switch (tipo)
                 {
                     case ETipo.Snacks:
-                        if(v is Snacks)
+                        // Preguntamos si el producto de la lista es del tipo Snacks
+                        if (v is Snacks)
                             sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Dulce:
+                        // Preguntamos si el producto de la lista es del tipo Dulce
                         if (v is Dulce)
                             sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Leche:
+                        // Preguntamos si el producto de la lista es del tipo Leche
                         if (v is Leche)
                             sb.AppendLine(v.Mostrar());
                         break;
-                 
                     default:
+                        // Todos
                         sb.AppendLine(v.Mostrar());
                         break;
                 }
@@ -102,9 +105,9 @@ namespace Entidades
                 }
 
                 c.productos.Add(p);
-                
+
             }
-            
+
             return c;
         }
         /// <summary>
@@ -119,7 +122,7 @@ namespace Entidades
             {
                 if (v == p)
                 {
-                    c.productos.Remove(p);
+                    c.productos.Remove(v);
                     break;
                 }
             }

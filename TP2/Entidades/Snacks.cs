@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Snacks:Producto
+    public class Snacks : Producto
     {
         public Snacks(EMarca marca, string codigoDeBarras, ConsoleColor color)
             : base(codigoDeBarras, marca, color)
