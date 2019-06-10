@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Excepciones
 {
-    public class NacionalidadInvalidaException
+    public class NacionalidadInvalidaException : Exception
     {
+        public NacionalidadInvalidaException(string dniFueraDeRango)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

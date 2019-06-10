@@ -1,0 +1,15 @@
+E:\repo\tp_laboratorio_2\TP3\Consola\obj\Debug\Consola.csprojAssemblyReference.cache
+E:\repo\tp_laboratorio_2\TP3\Consola\obj\Debug\Consola.csproj.CoreCompileInputs.cache
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\Consola.exe
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\Consola.pdb
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\Archivos.dll
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\ClasesAbstractas.dll
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\ClasesInstanciables.dll
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\Excepciones.dll
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\Archivos.pdb
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\ClasesAbstractas.pdb
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\ClasesInstanciables.pdb
+E:\repo\tp_laboratorio_2\TP3\Consola\bin\Debug\Excepciones.pdb
+E:\repo\tp_laboratorio_2\TP3\Consola\obj\Debug\Consola.csproj.CopyComplete
+E:\repo\tp_laboratorio_2\TP3\Consola\obj\Debug\Consola.exe
+E:\repo\tp_laboratorio_2\TP3\Consola\obj\Debug\Consola.pdb

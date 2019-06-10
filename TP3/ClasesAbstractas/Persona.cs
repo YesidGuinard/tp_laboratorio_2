@@ -8,7 +8,7 @@ namespace ClasesAbstractas
 {
     public abstract class Persona
     {
-       
+
         public enum ENacionalidad { Argentino, Extranjero }
         #region Atributos
         private string apellido;
@@ -25,7 +25,7 @@ namespace ClasesAbstractas
             }
             set
             {
-                this.apellido = this.ValidarNombreApellido(value);
+                this.apellido = Persona.ValidarNombreApellido(value);
             }
         }
 
@@ -37,7 +37,7 @@ namespace ClasesAbstractas
             }
             set
             {
-                this.dni = this.ValidarDni(this.nacionalidad,value);
+                this.dni = Persona.ValidarDni(this.nacionalidad, value);
             }
         }
 
@@ -52,7 +52,7 @@ namespace ClasesAbstractas
                 this.nacionalidad = value;
             }
         }
-        
+
         public string Nombre
         {
             get
@@ -61,15 +61,15 @@ namespace ClasesAbstractas
             }
             set
             {
-                this.nombre = this.ValidarNombreApellido(value);
+                this.nombre = Persona.ValidarNombreApellido(value);
             }
         }
-        
+
         public string StringToDNI
         {
             set
             {
-                this.dni = this.ValidarDni(this.nacionalidad, value);
+                this.dni = Persona.ValidarDni(this.nacionalidad, value);
             }
 
         }
@@ -88,7 +88,7 @@ namespace ClasesAbstractas
             this.Nacionalidad = nacionalidad;
         }
 
-        public Persona(string nombre, string apellido,int dni, ENacionalidad nacionalidad): this (nombre,apellido,nacionalidad)
+        public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
             this.DNI = dni;
         }
@@ -105,18 +105,18 @@ namespace ClasesAbstractas
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Nombre: {0} {1}\n", this.Nombre, this.Apellido);
-            sb.AppendFormat("Dni: {0}\n", this.DNI);
-            sb.AppendFormat("Nacionalidad: {0}\n", this.Nacionalidad);
+            sb.AppendFormat("NOMBRE COMPLETO: {0} {1}\n", this.Nombre, this.Apellido);
+            //sb.AppendFormat("Dni: {0}\n", this.DNI);
+            sb.AppendFormat("NACIONALIDAD: {0}\n", this.Nacionalidad);
             return sb.ToString();
         }
 
-        public int ValidarDni(ENacionalidad nacionalidad, int dato)
+        private static int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
             switch (nacionalidad)
             {
                 case ENacionalidad.Argentino:
-                    if (dato>=89999999 || dato<=1)
+                    if (dato >= 89999999 || dato <= 1)
                     {
                         throw new NacionalidadInvalidaException("La nacionalidad no coincide con el numero de DNI ");
                     }
@@ -128,19 +128,49 @@ namespace ClasesAbstractas
                     }
                     break;
                 default:
-                    throw  new NacionalidadInvalidaException("Dni fuera de rango");
+                    throw new NacionalidadInvalidaException("Dni fuera de rango");
             }
             return dato;
         }
 
-        public int ValidarDni(ENacionalidad nacionalidad, string dato)
+        private static int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
-            return 0;
+            int dniValido = 0;
+
+            dato = dato.Replace(".", String.Empty);
+
+
+            if (!(dato.Length > 0 && dato.Length <= 8) || !int.TryParse(dato, out dniValido))
+            {
+                throw new DniInvalidoException("Formato Dni Invalido");
+            }
+
+            try
+            {
+                dniValido = Persona.ValidarDni(nacionalidad, dniValido);
+            }
+            catch (Exception e)
+            {
+                throw new DniInvalidoException(e);
+            }
+
+
+            return dniValido;
+
         }
 
-        public string ValidarNombreApellido(string dato)
+        private static string ValidarNombreApellido(string dato)
         {
-            return "";
+            foreach (char letra in dato)
+            {
+                if (!(char.IsLetter(letra)))
+                {
+                    dato = "";
+                    break;
+                }
+
+            }
+            return dato;
         }
 
         #endregion

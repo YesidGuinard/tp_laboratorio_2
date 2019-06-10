@@ -1,0 +1,11 @@
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.dll
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.pdb
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\bin\Debug\ClasesAbstractas.dll
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\bin\Debug\Excepciones.dll
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\bin\Debug\ClasesAbstractas.pdb
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\bin\Debug\Excepciones.pdb
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csprojAssemblyReference.cache
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csproj.CoreCompileInputs.cache
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csproj.CopyComplete
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.dll
+E:\repo\tp_laboratorio_2\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.pdb
