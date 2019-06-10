@@ -1,0 +1,9 @@
+E:\repo\tp_laboratorio_2\TP3\Clases_Abstractas\bin\Debug\Clases_Abstractas.dll
+E:\repo\tp_laboratorio_2\TP3\Clases_Abstractas\bin\Debug\Clases_Abstractas.pdb
+E:\repo\tp_laboratorio_2\TP3\Clases_Abstractas\bin\Debug\Excepciones.dll
+E:\repo\tp_laboratorio_2\TP3\Clases_Abstractas\bin\Debug\Excepciones.pdb
+E:\repo\tp_laboratorio_2\TP3\Clases_Abstractas\obj\Debug\Clases_Abstractas.csprojAssemblyReference.cache
+E:\repo\tp_laboratorio_2\TP3\Clases_Abstractas\obj\Debug\Clases_Abstractas.csproj.CoreCompileInputs.cache
+E:\repo\tp_laboratorio_2\TP3\Clases_Abstractas\obj\Debug\Clases_Abstractas.csproj.CopyComplete
+E:\repo\tp_laboratorio_2\TP3\Clases_Abstractas\obj\Debug\Clases_Abstractas.dll
+E:\repo\tp_laboratorio_2\TP3\Clases_Abstractas\obj\Debug\Clases_Abstractas.pdb

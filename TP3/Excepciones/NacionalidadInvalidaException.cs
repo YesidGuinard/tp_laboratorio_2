@@ -8,9 +8,12 @@ namespace Excepciones
 {
     public class NacionalidadInvalidaException : Exception
     {
-        public NacionalidadInvalidaException(string dniFueraDeRango)
+        public NacionalidadInvalidaException()
         {
-            throw new NotImplementedException();
+
+        }
+        public NacionalidadInvalidaException(string mensaje) : base(mensaje)
+        {
         }
     }
 }

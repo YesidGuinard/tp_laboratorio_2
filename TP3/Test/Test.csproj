@@ -55,13 +55,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClasesAbstractas\ClasesAbstractas.csproj">
+    <ProjectReference Include="..\Clases_Abstractas\Clases_Abstractas.csproj">
       <Project>{3bcc19c9-1d54-491e-a98d-890a88d7d051}</Project>
-      <Name>ClasesAbstractas</Name>
+      <Name>Clases_Abstractas</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ClasesInstanciables\ClasesInstanciables.csproj">
+    <ProjectReference Include="..\Clases_Instanciables\Clases_Instanciables.csproj">
       <Project>{94e9bbcf-cbce-41e3-9b15-59164a3074f0}</Project>
-      <Name>ClasesInstanciables</Name>
+      <Name>Clases_Instanciables</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

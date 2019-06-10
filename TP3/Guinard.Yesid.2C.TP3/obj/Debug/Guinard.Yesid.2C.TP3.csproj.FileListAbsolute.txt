@@ -1,0 +1,15 @@
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\obj\Debug\Guinard.Yesid.2C.TP3.csprojAssemblyReference.cache
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\obj\Debug\Guinard.Yesid.2C.TP3.csproj.CoreCompileInputs.cache
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Guinard.Yesid.2C.TP3.exe
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Guinard.Yesid.2C.TP3.pdb
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Archivos.dll
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Clases_Abstractas.dll
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Clases_Instanciables.dll
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Excepciones.dll
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Archivos.pdb
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Clases_Abstractas.pdb
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Clases_Instanciables.pdb
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\bin\Debug\Excepciones.pdb
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\obj\Debug\Guinard.Yesid.2C.TP3.csproj.CopyComplete
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\obj\Debug\Guinard.Yesid.2C.TP3.exe
+E:\repo\tp_laboratorio_2\TP3\Guinard.Yesid.2C.TP3\obj\Debug\Guinard.Yesid.2C.TP3.pdb

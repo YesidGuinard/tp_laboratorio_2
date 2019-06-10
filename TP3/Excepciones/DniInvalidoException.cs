@@ -8,14 +8,29 @@ namespace Excepciones
 {
     public class DniInvalidoException:Exception
     {
-        public DniInvalidoException(string documentoNoValido)
+
+
+        public DniInvalidoException()
         {
-            throw new NotImplementedException();
+
         }
 
-        public DniInvalidoException(Exception documentoNoValido)
+
+        public DniInvalidoException(Exception e) :this("DNI invalido",e)
         {
-            throw new NotImplementedException();
+
+        }
+
+
+        public DniInvalidoException(string message) :this(message,null)
+        {
+
+        }
+
+
+        public DniInvalidoException(string message, Exception e) : base(message,e)
+        {
+
         }
     }
 }

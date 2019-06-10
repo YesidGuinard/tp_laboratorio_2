@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasesAbstractas", "ClasesAbstractas\ClasesAbstractas.csproj", "{3BCC19C9-1D54-491E-A98D-890A88D7D051}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases_Abstractas", "Clases_Abstractas\Clases_Abstractas.csproj", "{3BCC19C9-1D54-491E-A98D-890A88D7D051}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasesInstanciables", "ClasesInstanciables\ClasesInstanciables.csproj", "{94E9BBCF-CBCE-41E3-9B15-59164A3074F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases_Instanciables", "Clases_Instanciables\Clases_Instanciables.csproj", "{94E9BBCF-CBCE-41E3-9B15-59164A3074F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consola", "Consola\Consola.csproj", "{1554C631-AEEB-4F98-A2A2-3D43AFFB49FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guinard.Yesid.2C.TP3", "Guinard.Yesid.2C.TP3\Guinard.Yesid.2C.TP3.csproj", "{1554C631-AEEB-4F98-A2A2-3D43AFFB49FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\Excepciones.csproj", "{ADB939D0-C1CE-4779-AEEA-32D5AA0BEDB8}"
 EndProject

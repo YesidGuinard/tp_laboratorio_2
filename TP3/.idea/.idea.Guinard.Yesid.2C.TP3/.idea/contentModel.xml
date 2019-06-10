@@ -5,17 +5,19 @@
     <e p="C:\Users\YesidG\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Guinard.Yesid.2C.TP3.-935036630.00" t="ExcludeRecursive" />
     <e p="E:\repo\tp_laboratorio_2\TP3" t="IncludeFlat">
       <e p="Archivos" t="IncludeRecursive">
+        <e p="Archivos.cs" t="Include" />
         <e p="Archivos.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
+        <e p="IArchivo.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="Xml.cs" t="Include" />
       </e>
-      <e p="ClasesAbstractas" t="IncludeRecursive">
+      <e p="Clases_Abstractas" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="ClasesAbstractas.csproj" t="IncludeRecursive" />
+        <e p="Clases_Abstractas.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Persona.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -23,10 +25,10 @@
         </e>
         <e p="Universitario.cs" t="Include" />
       </e>
-      <e p="ClasesInstanciables" t="IncludeRecursive">
+      <e p="Clases_Instanciables" t="IncludeRecursive">
         <e p="Alumno.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="ClasesInstanciables.csproj" t="IncludeRecursive" />
+        <e p="Clases_Instanciables.csproj" t="IncludeRecursive" />
         <e p="Jornada.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Profesor.cs" t="Include" />
@@ -34,15 +36,6 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="Universidad.cs" t="Include" />
-      </e>
-      <e p="Consola" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Consola.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="AssemblyInfo.cs" t="Include" />
-        </e>
       </e>
       <e p="Excepciones" t="IncludeRecursive">
         <e p="AlumnoRepetidoException.cs" t="Include" />
@@ -52,10 +45,20 @@
         <e p="Excepciones.csproj" t="IncludeRecursive" />
         <e p="NacionalidadInvalidaException.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="ProfesorRepetidoException.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="SinProfesorException.cs" t="Include" />
+      </e>
+      <e p="Guinard.Yesid.2C.TP3" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Guinard.Yesid.2C.TP3.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
       </e>
       <e p="Guinard.Yesid.2C.TP3.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive">
