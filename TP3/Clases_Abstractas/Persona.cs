@@ -77,23 +77,42 @@ namespace Clases_Abstractas
         #endregion
 
         #region Constructores
-
+        /// <summary>
+        /// 
+        /// </summary>
         public Persona()
         {
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="nacionalidad"></param>
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
         {
             this.Nombre = nombre;
             this.Apellido = apellido;
             this.Nacionalidad = nacionalidad;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
             this.DNI = dni;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad) : this(nombre, apellido,
             nacionalidad)
         {
@@ -103,6 +122,10 @@ namespace Clases_Abstractas
         #endregion
 
         #region Metodos
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -111,7 +134,12 @@ namespace Clases_Abstractas
             sb.AppendFormat("NACIONALIDAD: {0}\n", this.Nacionalidad);
             return sb.ToString();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nacionalidad"></param>
+        /// <param name="dato"></param>
+        /// <returns></returns>
         private static int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
             switch (nacionalidad)
@@ -133,7 +161,12 @@ namespace Clases_Abstractas
             }
             return dato;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nacionalidad"></param>
+        /// <param name="dato"></param>
+        /// <returns></returns>
         private static int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             dato = dato.Replace(".", "");
@@ -154,7 +187,11 @@ namespace Clases_Abstractas
 
             return ValidarDni(nacionalidad, dni);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="dato"></param>
+        /// <returns></returns>
         private static string ValidarNombreApellido(string dato)
         {
             foreach (char letra in dato)

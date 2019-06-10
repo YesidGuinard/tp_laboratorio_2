@@ -74,33 +74,62 @@ namespace Clases_Instanciables
                     this.Jornadas[i] = value;
             }
         }
-
+        
+        /// <summary>
+        /// 
+        /// </summary>
         public Universidad()
         {
             this.Jornadas = new List<Jornada>();
             this.Profesores = new List<Profesor>();
             this.Alumnos = new List<Alumno>();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator == (Universidad g, Alumno a)
         {
             return g.Alumnos.Contains(a);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator !=(Universidad g, Alumno a)
         {
             return !(g == a);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         public static bool operator ==(Universidad g, Profesor i)
         {
             return g.Profesores.Contains(i);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         public static bool operator !=(Universidad g, Profesor i)
         {
             return !(g == i);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static Profesor operator ==(Universidad g, EClases clase)
         {
             foreach(Profesor profe in g.Profesores)
@@ -113,7 +142,12 @@ namespace Clases_Instanciables
 
             throw new SinProfesorException();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static Profesor operator !=(Universidad g, EClases clase)
         {
             foreach (Profesor profe in g.Profesores)
@@ -126,7 +160,12 @@ namespace Clases_Instanciables
 
             throw new SinProfesorException();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad g, Alumno a)
         {
             if(g != a)
@@ -139,7 +178,12 @@ namespace Clases_Instanciables
                 throw new AlumnoRepetidoException();
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad g, Profesor i)
         {
             if (g != i)
@@ -152,7 +196,12 @@ namespace Clases_Instanciables
                 throw new ProfesorRepetidoException();
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad g, EClases clase)
         {
 
@@ -168,7 +217,10 @@ namespace Clases_Instanciables
 
             return g;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gim"></param>
         public static void Guardar(Universidad gim)
         {
             Xml<Universidad> aux = new Xml<Universidad>();
@@ -177,7 +229,10 @@ namespace Clases_Instanciables
                 throw new ArchivosException("Error al guardar la universidad.");
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public static Universidad Leer()
         {
             Universidad retorno;
@@ -188,6 +243,11 @@ namespace Clases_Instanciables
             }
             return retorno;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gim"></param>
+        /// <returns></returns>
         private static string MostrarDatos(Universidad gim)
         {
             StringBuilder sb = new StringBuilder();
@@ -201,7 +261,10 @@ namespace Clases_Instanciables
 
             return sb.ToString();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return Universidad.MostrarDatos(this);

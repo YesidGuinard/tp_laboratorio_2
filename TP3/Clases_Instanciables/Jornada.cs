@@ -49,18 +49,27 @@ namespace Clases_Instanciables
                 this.instructor = value;
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public Jornada()
         {
             this.Alumnos = new List<Alumno>();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clase"></param>
+        /// <param name="instructor"></param>
         public Jornada(Universidad.EClases clase, Profesor instructor) : this()
         {
             this.Clase = clase;
             this.Instructor = instructor;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -74,23 +83,41 @@ namespace Clases_Instanciables
             return sb.ToString();
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator ==(Jornada j, Alumno a)
         {
             return j.Alumnos.Contains(a);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator !=(Jornada j, Alumno a)
         {
             return !(j == a);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Jornada operator +(Jornada j, Alumno a)
         {
             j.Alumnos.Add(a);
             return j;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="jornada"></param>
         public static void Guardar(Jornada jornada)
         {
             Texto aux = new Texto();

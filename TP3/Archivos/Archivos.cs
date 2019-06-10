@@ -9,7 +9,12 @@ namespace Archivos
 {
     public class Texto : IArchivo<string>
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Guardar(string archivo, string datos)
         {
             StreamWriter file = null;
@@ -30,7 +35,12 @@ namespace Archivos
             return retorno;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Leer(string archivo, out string datos)
         {
             StreamReader file = null;

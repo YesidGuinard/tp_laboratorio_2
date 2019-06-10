@@ -6,7 +6,12 @@ namespace Archivos
 {
     public class Xml<T> : IArchivo<T>
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Guardar(string archivo, T datos)
         {
             XmlSerializer ser = new XmlSerializer(typeof(T));
@@ -28,6 +33,12 @@ namespace Archivos
             }
             return retorno;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Leer(string archivo, out T datos)
         {
             XmlSerializer ser = new XmlSerializer(typeof(T));

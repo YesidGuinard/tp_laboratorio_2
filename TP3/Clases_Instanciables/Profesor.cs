@@ -12,18 +12,39 @@ namespace Clases_Instanciables
 
         private static Random random;
         private Queue<Universidad.EClases> clasesDelDia;
-
+        /// <summary>
+        /// 
+        /// </summary>
         static Profesor()
         {
             random = new Random();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        public Profesor()
+        {
 
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Profesor(int id, string nombre, string apellido,string dni,ENacionalidad nacionalidad):base(id,nombre,apellido,dni,nacionalidad)
         {
             this.clasesDelDia = new Queue<Universidad.EClases>();
             this._randomClases();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {
             bool retorno = false;
@@ -38,12 +59,20 @@ namespace Clases_Instanciables
 
             return retorno;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static bool operator !=(Profesor i, Universidad.EClases clase)
         {
             return !(i == clase);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -51,17 +80,25 @@ namespace Clases_Instanciables
             sb.AppendLine(this.ParticiparEnClase());
             return sb.ToString();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.MostrarDatos();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         private void _randomClases()
         {
             this.clasesDelDia.Enqueue((Universidad.EClases)Profesor.random.Next(0,4));
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         protected override string ParticiparEnClase()
         {
             StringBuilder sb = new StringBuilder();

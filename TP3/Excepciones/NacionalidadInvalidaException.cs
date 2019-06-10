@@ -8,10 +8,17 @@ namespace Excepciones
 {
     public class NacionalidadInvalidaException : Exception
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public NacionalidadInvalidaException()
         {
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mensaje"></param>
         public NacionalidadInvalidaException(string mensaje) : base(mensaje)
         {
         }
