@@ -2,16 +2,17 @@ using System;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
+
 namespace Archivos
 {
     public class Xml<T> : IArchivo<T>
     {
         /// <summary>
-        /// 
+        /// guarda archivo xml
         /// </summary>
-        /// <param name="archivo"></param>
-        /// <param name="datos"></param>
-        /// <returns></returns>
+        /// <param name="archivo">ruta</param>
+        /// <param name="datos">datos a guardar</param>
+        /// <returns>Verdadero en caso de guardar correctamente</returns>
         public bool Guardar(string archivo, T datos)
         {
             XmlSerializer ser = new XmlSerializer(typeof(T));
@@ -33,27 +34,28 @@ namespace Archivos
             }
             return retorno;
         }
+        
         /// <summary>
-        /// 
+        /// Lee archivo
         /// </summary>
-        /// <param name="archivo"></param>
-        /// <param name="datos"></param>
-        /// <returns></returns>
+        /// <param name="archivo">ruta</param>
+        /// <param name="datos">datos leidos</param>
+        /// <returns>Verdadero si se leyo</returns>
         public bool Leer(string archivo, out T datos)
         {
-            XmlSerializer ser = new XmlSerializer(typeof(T));
+            XmlSerializer serial = new XmlSerializer(typeof(T));
             XmlTextReader reader = null;
             bool retorno = true;
 
             try
             {
                 reader = new XmlTextReader(archivo);
-                datos = (T)ser.Deserialize(reader);
+                datos = (T)serial.Deserialize(reader);
             }
             catch (Exception)
             {
                 datos = default(T);
-                retorno = false;  
+                retorno = false;
             }
             finally
             {

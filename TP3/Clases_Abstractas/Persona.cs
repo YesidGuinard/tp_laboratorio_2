@@ -78,41 +78,44 @@ namespace Clases_Abstractas
 
         #region Constructores
         /// <summary>
-        /// 
+        /// Constructor por defecto
         /// </summary>
         public Persona()
         {
         }
+
         /// <summary>
-        /// 
+        /// Constructor Persona
         /// </summary>
-        /// <param name="nombre"></param>
-        /// <param name="apellido"></param>
-        /// <param name="nacionalidad"></param>
+        /// <param name="nombre">Nombre</param>
+        /// <param name="apellido">Apellido</param>
+        /// <param name="nacionalidad">Nacionalidad</param>
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
         {
             this.Nombre = nombre;
             this.Apellido = apellido;
             this.Nacionalidad = nacionalidad;
         }
+
         /// <summary>
-        /// 
+        /// Constructor Persona con dni
         /// </summary>
-        /// <param name="nombre"></param>
-        /// <param name="apellido"></param>
-        /// <param name="dni"></param>
-        /// <param name="nacionalidad"></param>
+        /// <param name="nombre">Nombre</param>
+        /// <param name="apellido">Apellido</param>
+        /// <param name="dni">DNI</param>
+        /// <param name="nacionalidad">Nacionalidad</param>
         public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
             this.DNI = dni;
         }
+
         /// <summary>
-        /// 
+        /// Constructor Persona con dni tpo string
         /// </summary>
-        /// <param name="nombre"></param>
-        /// <param name="apellido"></param>
-        /// <param name="dni"></param>
-        /// <param name="nacionalidad"></param>
+        /// <param name="nombre">Nombre</param>
+        /// <param name="apellido">Apellido</param>
+        /// <param name="dni">DNI</param>
+        /// <param name="nacionalidad">Nacionalidad</param>
         public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad) : this(nombre, apellido,
             nacionalidad)
         {
@@ -123,9 +126,9 @@ namespace Clases_Abstractas
 
         #region Metodos
         /// <summary>
-        /// 
+        /// Muestra datos de persona
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Datos de persona</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -134,11 +137,12 @@ namespace Clases_Abstractas
             sb.AppendFormat("NACIONALIDAD: {0}\n", this.Nacionalidad);
             return sb.ToString();
         }
+
         /// <summary>
-        /// 
+        /// Valida dni de tipo int
         /// </summary>
-        /// <param name="nacionalidad"></param>
-        /// <param name="dato"></param>
+        /// <param name="nacionalidad">Nacionalidad</param>
+        /// <param name="dato">dni a validar</param>
         /// <returns></returns>
         private static int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
@@ -161,11 +165,12 @@ namespace Clases_Abstractas
             }
             return dato;
         }
+
         /// <summary>
-        /// 
+        /// Valida dni de tipo string
         /// </summary>
-        /// <param name="nacionalidad"></param>
-        /// <param name="dato"></param>
+        /// <param name="nacionalidad">Nacionalidad</param>
+        /// <param name="dato">dni a validar</param>
         /// <returns></returns>
         private static int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
@@ -187,11 +192,12 @@ namespace Clases_Abstractas
 
             return ValidarDni(nacionalidad, dni);
         }
+
         /// <summary>
-        /// 
+        /// Valida Nombre y Apellido
         /// </summary>
-        /// <param name="dato"></param>
-        /// <returns></returns>
+        /// <param name="dato">ato a validar</param>
+        /// <returns>Retorna Nombre o Apellido si es valido</returns>
         private static string ValidarNombreApellido(string dato)
         {
             foreach (char letra in dato)
@@ -207,12 +213,6 @@ namespace Clases_Abstractas
         }
 
         #endregion
-
-
-
-
-
-
 
     }
 }

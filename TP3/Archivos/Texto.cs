@@ -10,19 +10,19 @@ namespace Archivos
     public class Texto : IArchivo<string>
     {
         /// <summary>
-        /// 
+        /// Guarda cadena en archivo de texto
         /// </summary>
-        /// <param name="archivo"></param>
-        /// <param name="datos"></param>
-        /// <returns></returns>
+        /// <param name="archivo">Ruta del archivo</param>
+        /// <param name="datos">Cadena a almacenarce</param>
+        /// <returns>verdadero si el archivo se guardo con exito</returns>
         public bool Guardar(string archivo, string datos)
         {
-            StreamWriter file = null;
+            StreamWriter streamReader = null;
             bool retorno = true;
             try
             {
-                file = new StreamWriter(archivo, false);
-                file.Write(datos);
+                streamReader = new StreamWriter(archivo, false);
+                streamReader.Write(datos);
             }
             catch (Exception)
             {
@@ -30,25 +30,26 @@ namespace Archivos
             }
             finally
             {
-                file.Close();
+                streamReader.Close();
             }
             return retorno;
         }
 
         /// <summary>
-        /// 
+        /// Lee archivo
         /// </summary>
-        /// <param name="archivo"></param>
-        /// <param name="datos"></param>
-        /// <returns></returns>
+        /// <param name="archivo">Ruta archivo</param>
+        /// <param name="datos">Datos leidos</param>
+        /// <returns>Verdadero en caso de leer bien</returns>
         public bool Leer(string archivo, out string datos)
         {
-            StreamReader file = null;
+            StreamReader streamReader = null;
+
             bool retorno = true;
             try
             {
-                file = new StreamReader(archivo);
-                datos = file.ReadToEnd();
+                streamReader = new StreamReader(archivo);
+                datos = streamReader.ReadToEnd();
             }
             catch (Exception)
             {
@@ -57,7 +58,7 @@ namespace Archivos
             }
             finally
             {
-                file.Close();
+                streamReader.Close();
             }
             return retorno;
         }

@@ -2,12 +2,12 @@ using System;
 
 namespace Excepciones
 {
-    public class ProfesorRepetidoException:Exception
+    public class ProfesorRepetidoException : Exception
     {
         /// <summary>
-        /// 
+        /// Excepcion Profesor repetido
         /// </summary>
-        public ProfesorRepetidoException() :base("Profesor Repetido")
+        public ProfesorRepetidoException() : base("Profesor Repetido")
         {
 
         }

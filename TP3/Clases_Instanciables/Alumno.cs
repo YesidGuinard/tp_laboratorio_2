@@ -17,14 +17,17 @@ namespace Clases_Instanciables
         }
         private Universidad.EClases claseQueToma;
         private EEstadoCuenta estadoCuenta;
+
+
         /// <summary>
-        /// 
+        /// Constructor por Defecto
         /// </summary>
         public Alumno()
         {
         }
+
         /// <summary>
-        /// 
+        /// Constructor con parametros
         /// </summary>
         /// <param name="id"></param>
         /// <param name="nombre"></param>
@@ -37,8 +40,9 @@ namespace Clases_Instanciables
         {
             this.claseQueToma = claseQueToma;
         }
+
         /// <summary>
-        /// 
+        /// Constructor con parametros
         /// </summary>
         /// <param name="id"></param>
         /// <param name="nombre"></param>
@@ -53,47 +57,52 @@ namespace Clases_Instanciables
         {
             this.estadoCuenta = estadoCuenta;
         }
+
         /// <summary>
-        /// 
+        /// Muestra clases que toma alumno
         /// </summary>
-        /// <returns></returns>
+        /// <returns>datos clases tomadas</returns>
         protected override string ParticiparEnClase()
         {
             return String.Format("TOMA CLASE DE :{0}", this.claseQueToma);
         }
+
         /// <summary>
-        /// 
+        /// hace publicos datos de alumno
         /// </summary>
-        /// <returns></returns>
+        /// <returns>datos del alumno</returns>
         public override string ToString()
         {
             return this.MostrarDatos();
         }
+
         /// <summary>
-        ///
+        /// veerifica si el alumno toma esa clase
         /// </summary>
-        /// <param name="a"></param>
-        /// <param name="clase"></param>
-        /// <returns></returns>
+        /// <param name="a">Alumno</param>
+        /// <param name="clase">clase</param>
+        /// <returns>Verdadero si alumno toma clase y estado de cuenta diferente de deudor</returns>
         public static bool operator ==(Alumno a, Universidad.EClases clase)
         {
             return (a.claseQueToma == clase && a.estadoCuenta != EEstadoCuenta.Deudor);
         }
+
         /// <summary>
-        /// 
+        /// verifica si no alumno toma clase 
         /// </summary>
-        /// <param name="a"></param>
-        /// <param name="clase"></param>
-        /// <returns></returns>
+        /// <param name="a">alumno</param>
+        /// <param name="clase">clase</param>
+        /// <returns>verdadero si no la toma</returns>
         public static bool operator !=(Alumno a, Universidad.EClases clase)
         {
             return (a.claseQueToma != clase);
 
         }
+
         /// <summary>
-        /// 
+        /// muestra dato del alumno
         /// </summary>
-        /// <returns></returns>
+        /// <returns>datos</returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();

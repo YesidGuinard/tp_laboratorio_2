@@ -74,9 +74,9 @@ namespace Clases_Instanciables
                     this.Jornadas[i] = value;
             }
         }
-        
+
         /// <summary>
-        /// 
+        /// Constructor por defecto
         /// </summary>
         public Universidad()
         {
@@ -84,57 +84,63 @@ namespace Clases_Instanciables
             this.Profesores = new List<Profesor>();
             this.Alumnos = new List<Alumno>();
         }
+
         /// <summary>
-        /// 
+        /// Verifica si alumno inscripto en universidad
         /// </summary>
-        /// <param name="g"></param>
-        /// <param name="a"></param>
-        /// <returns></returns>
-        public static bool operator == (Universidad g, Alumno a)
+        /// <param name="g">universidad</param>
+        /// <param name="a">alumno</param>
+        /// <returns>Verdadero si si encuentra inscripto</returns>
+        public static bool operator ==(Universidad g, Alumno a)
         {
             return g.Alumnos.Contains(a);
         }
+
         /// <summary>
-        /// 
+        /// Verifica si alumno no se encuentra inscripto en universidad
         /// </summary>
-        /// <param name="g"></param>
-        /// <param name="a"></param>
-        /// <returns></returns>
+        /// <param name="g">universidad</param>
+        /// <param name="a">alumno</param>
+        /// <returns>Verdadero si no se encuentra inscripto</returns>
         public static bool operator !=(Universidad g, Alumno a)
         {
             return !(g == a);
         }
+
         /// <summary>
-        /// 
+        /// Verifica si profesor inscripto en universidad
         /// </summary>
-        /// <param name="g"></param>
-        /// <param name="i"></param>
-        /// <returns></returns>
+        /// <param name="g">universidad</param>
+        /// <param name="i">profesor</param>
+        /// <returns>Verdadero si si encuentra inscripto</returns>
         public static bool operator ==(Universidad g, Profesor i)
         {
             return g.Profesores.Contains(i);
         }
+
+
         /// <summary>
-        /// 
+        /// Verifica si profesor no se encuentra inscripto en universidad
         /// </summary>
-        /// <param name="g"></param>
-        /// <param name="i"></param>
-        /// <returns></returns>
+        /// <param name="g">universidad</param>
+        /// <param name="i">profesor</param>
+        /// <returns>Verdadero si no se encuentra inscripto</returns>
         public static bool operator !=(Universidad g, Profesor i)
         {
             return !(g == i);
         }
+
         /// <summary>
-        /// 
+        /// revisa si profesor dicta esa clase
         /// </summary>
-        /// <param name="g"></param>
-        /// <param name="clase"></param>
-        /// <returns></returns>
+        /// <param name="g">universidad</param>
+        /// <param name="clase">clase</param>
+        /// <returns>primer profesor encontrado</returns>
         public static Profesor operator ==(Universidad g, EClases clase)
         {
-            foreach(Profesor profe in g.Profesores)
+            foreach (Profesor profe in g.Profesores)
             {
-                if(profe == clase)
+                if (profe == clase)
                 {
                     return profe;
                 }
@@ -142,12 +148,13 @@ namespace Clases_Instanciables
 
             throw new SinProfesorException();
         }
+
         /// <summary>
-        /// 
+        /// revisa si profesor NO dicta esa clase
         /// </summary>
-        /// <param name="g"></param>
-        /// <param name="clase"></param>
-        /// <returns></returns>
+        /// <param name="g">universidad</param>
+        /// <param name="clase">clase</param>
+        /// <returns>primer profesor encontrado que no dicte clase</returns>
         public static Profesor operator !=(Universidad g, EClases clase)
         {
             foreach (Profesor profe in g.Profesores)
@@ -160,15 +167,16 @@ namespace Clases_Instanciables
 
             throw new SinProfesorException();
         }
+
         /// <summary>
-        /// 
+        /// Agrega alumno a universidad si no esta inscripto 
         /// </summary>
-        /// <param name="g"></param>
-        /// <param name="a"></param>
-        /// <returns></returns>
+        /// <param name="g">Universidad</param>
+        /// <param name="a">alumno</param>
+        /// <returns>Universidad</returns>
         public static Universidad operator +(Universidad g, Alumno a)
         {
-            if(g != a)
+            if (g != a)
             {
                 g.Alumnos.Add(a);
                 return g;
@@ -178,12 +186,13 @@ namespace Clases_Instanciables
                 throw new AlumnoRepetidoException();
             }
         }
+
         /// <summary>
-        /// 
+        /// Agrega profesor a universidad si no esta inscripto 
         /// </summary>
-        /// <param name="g"></param>
-        /// <param name="i"></param>
-        /// <returns></returns>
+        /// <param name="g">universidad</param>
+        /// <param name="i">profesor</param>
+        /// <returns>universidad</returns>
         public static Universidad operator +(Universidad g, Profesor i)
         {
             if (g != i)
@@ -196,19 +205,20 @@ namespace Clases_Instanciables
                 throw new ProfesorRepetidoException();
             }
         }
+
         /// <summary>
-        /// 
+        /// Agrega una nueva clase y nueva Jornada
         /// </summary>
-        /// <param name="g"></param>
-        /// <param name="clase"></param>
-        /// <returns></returns>
+        /// <param name="g">universidad</param>
+        /// <param name="clase">clase</param>
+        /// <returns>universidad</returns>
         public static Universidad operator +(Universidad g, EClases clase)
         {
 
             Jornada jornada = new Jornada(clase, g == clase);
-            foreach(Alumno alumno in g.Alumnos)
+            foreach (Alumno alumno in g.Alumnos)
             {
-                if(alumno == clase)
+                if (alumno == clase)
                 {
                     jornada.Alumnos.Add(alumno);
                 }
@@ -217,20 +227,22 @@ namespace Clases_Instanciables
 
             return g;
         }
+
         /// <summary>
-        /// 
+        /// Guarda en archivo XML Datos de Universidad
         /// </summary>
-        /// <param name="gim"></param>
-        public static void Guardar(Universidad gim)
+        /// <param name="uni">universidad</param>
+        public static void Guardar(Universidad uni)
         {
             Xml<Universidad> aux = new Xml<Universidad>();
-            if (aux.Guardar("Universidad.xml", gim) == false)
+            if (aux.Guardar("Universidad.xml", uni) == false)
             {
                 throw new ArchivosException("Error al guardar la universidad.");
             }
         }
+
         /// <summary>
-        /// 
+        /// lee desde archivo xml datos de universidad
         /// </summary>
         /// <returns></returns>
         public static Universidad Leer()
@@ -243,16 +255,17 @@ namespace Clases_Instanciables
             }
             return retorno;
         }
+
         /// <summary>
-        /// 
+        /// muestra datos de universidad
         /// </summary>
-        /// <param name="gim"></param>
-        /// <returns></returns>
-        private static string MostrarDatos(Universidad gim)
+        /// <param name="uni">universidad</param>
+        /// <returns>datos universidad</returns>
+        private static string MostrarDatos(Universidad uni)
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach(Jornada jornada in gim.Jornadas)
+            foreach (Jornada jornada in uni.Jornadas)
             {
                 sb.AppendLine("JORNADA: ");
                 sb.AppendLine(jornada.ToString());
@@ -261,10 +274,11 @@ namespace Clases_Instanciables
 
             return sb.ToString();
         }
+
         /// <summary>
-        /// 
+        /// hace publicos datos de universidad
         /// </summary>
-        /// <returns></returns>
+        /// <returns>datos universidad</returns>
         public override string ToString()
         {
             return Universidad.MostrarDatos(this);

@@ -10,7 +10,7 @@ namespace Excepciones
     {
 
         /// <summary>
-        /// 
+        /// Constructor
         /// </summary>
         public DniInvalidoException()
         {
@@ -18,25 +18,25 @@ namespace Excepciones
         }
 
         /// <summary>
-        /// 
+        /// excepcion dni invalido
         /// </summary>
-        /// <param name="e"></param>
+        /// <param name="e">excepcion</param>
         public DniInvalidoException(Exception e) :this("DNI invalido",e)
         {
 
         }
 
         /// <summary>
-        /// 
+        /// excepcion dni invalido
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="message">Mensaje recibido</param>
         public DniInvalidoException(string message) :this(message,null)
         {
 
         }
 
         /// <summary>
-        /// 
+        /// excepcion dni invalido
         /// </summary>
         /// <param name="message"></param>
         /// <param name="e"></param>

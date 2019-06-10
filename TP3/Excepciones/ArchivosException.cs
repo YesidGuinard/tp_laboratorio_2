@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Excepciones
 {
-    public class ArchivosException:Exception
+    public class ArchivosException : Exception
     {
         /// <summary>
-        /// 
+        /// Excepcion archivo
         /// </summary>
-        public ArchivosException():this("Error de archivo.")
+        public ArchivosException() : this("Error de archivo.")
         {
 
         }
         /// <summary>
-        /// 
+        /// Excepcion archivo
         /// </summary>
         /// <param name="message"></param>
-        public ArchivosException(string message):base(message)
+        public ArchivosException(string message) : base(message)
         {
         }
     }
