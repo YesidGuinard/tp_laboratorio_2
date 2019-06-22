@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Guinard.Silva.Yesid.Dario.2C.TP4\Guinard.Silva.Yesid.Dario.2C.TP4.csproj">
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{16e246b3-0a29-4649-b513-99183016e040}</Project>
-      <Name>Guinard.Silva.Yesid.Dario.2C.TP4</Name>
+      <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
