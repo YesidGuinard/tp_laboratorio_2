@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Guinard.Silva.Yesid.Dario._2C.TP4
+namespace Entidades
 {
     public class TrackingIdRepetidoException:Exception
     {

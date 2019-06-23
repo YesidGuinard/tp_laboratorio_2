@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace Guinard.Silva.Yesid.Dario._2C.TP4
+namespace Entidades
 {
     public static class GuardaString
     {
