@@ -12,6 +12,11 @@ namespace Entidades
         private static SqlCommand comando;
         private static SqlConnection conexion;
 
+        /// <summary>
+        /// Inserta paquete en base de datos
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static bool Insertar(Paquete p)
         {
             bool retorno = false;
@@ -38,12 +43,15 @@ namespace Entidades
                     comando.Dispose();
                 }
 
-                
+
             }
             return retorno;
 
         }
 
+        /// <summary>
+        /// Contructor DAO estatico  que inicializa conexion sql
+        /// </summary>
         static PaqueteDAO()
         {
             String connectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog =correo-sp-2017; Integrated Security = True";
@@ -60,7 +68,6 @@ namespace Entidades
                 throw e;
             }
         }
-
 
     }
 }

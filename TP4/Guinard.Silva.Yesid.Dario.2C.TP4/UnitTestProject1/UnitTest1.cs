@@ -7,14 +7,20 @@ namespace UnitTestProject1
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// Verifica que la lista de paquetes en correo este instanciada
+        /// </summary>
         [TestMethod]
         public void ListaDePaquetesInstanciada()
         {
             Correo correo = new Correo();
             Assert.IsNotNull(correo.Paquetes);
-            
+
         }
 
+        /// <summary>
+        /// verifica si se lanza excepcion al agregar paquetes cuando dos paquetes son iguales
+        /// </summary>
         [TestMethod]
         public void PaquetesIguales()
         {
@@ -27,11 +33,12 @@ namespace UnitTestProject1
                 correo = correo + p1;
                 correo = correo + p2;
                 Assert.Fail();
-            }catch (Exception e)
+            }
+            catch (Exception e)
             {
                 Assert.IsInstanceOfType(e, typeof(TrackingIdRepetidoException));
             }
-           
+
         }
     }
 }

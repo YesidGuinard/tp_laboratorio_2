@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Interface mostrar generico
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public interface IMostrar<T>
     {
         string MostrarDatos(IMostrar<T> elemento);

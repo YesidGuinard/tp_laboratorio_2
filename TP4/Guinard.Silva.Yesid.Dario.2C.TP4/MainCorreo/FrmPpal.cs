@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidades; 
+using Entidades;
 
 namespace FrmPpal
 {
@@ -15,12 +15,20 @@ namespace FrmPpal
     {
         Correo correo;
 
+        /// <summary>
+        /// Constructor por defecto
+        /// </summary>
         public FrmPpal()
         {
             InitializeComponent();
             this.correo = new Correo();
         }
 
+        /// <summary>
+        /// metodo que intenta agregar paquete de no estar repetido
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Paquete paquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
@@ -38,11 +46,19 @@ namespace FrmPpal
 
         }
 
+        /// <summary>
+        /// Muestra en rtbMostrar todos los paquetes y estado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMostrarTodos_Click(object sender, EventArgs e)
         {
             this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
         }
 
+        /// <summary>
+        /// metodo que refresca en lst el estado de paquetes
+        /// </summary>
         private void ActualizarEstados()
         {
             lstEstadoIngresado.Items.Clear();
@@ -53,7 +69,7 @@ namespace FrmPpal
             {
                 switch (paquete.Estado)
                 {
-                    case  Paquete.EEstado.Ingresado:
+                    case Paquete.EEstado.Ingresado:
                         lstEstadoIngresado.Items.Add(paquete);
                         break;
 
@@ -70,11 +86,21 @@ namespace FrmPpal
 
         }
 
+        /// <summary>
+        /// closing del form que finaliza todos los hilos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmPpal_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.correo.FinEntregas();
         }
 
+        /// <summary>
+        /// Muestra informacion en rtbMostrar y almacena e archivo salida.txt
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="elemento"></param>
         private void MostrarInformacion<T>(IMostrar<T> elemento)
         {
             if (!object.ReferenceEquals(elemento, null))
@@ -94,6 +120,11 @@ namespace FrmPpal
 
         }
 
+        /// <summary>
+        ///  revisa el estado de paquetes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void paq_InformaEstado(object sender, EventArgs e)
         {
             if (this.InvokeRequired)
@@ -107,12 +138,21 @@ namespace FrmPpal
             }
 
         }
-
+        
+        /// <summary>
+        /// Informa por msgbox Cualquier error de conexion sql
+        /// </summary>
+        /// <param name="mensaje"></param>
         private void InformaErrorConexion(string mensaje)
         {
             MessageBox.Show(mensaje);
         }
 
+        /// <summary>
+        /// Si paquete estado es entregado, al hacer click secundario muestar informacion de paquete entregado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem);

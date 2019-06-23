@@ -9,6 +9,12 @@ namespace Entidades
 {
     public static class GuardaString
     {
+        /// <summary>
+        /// MEtodo de extesion de string que guarda archivo en Desktop
+        /// </summary>
+        /// <param name="texto"></param>
+        /// <param name="archivo"></param>
+        /// <returns></returns>
         public static bool Guardar(this string texto, string archivo)
         {
             bool retorno = false;

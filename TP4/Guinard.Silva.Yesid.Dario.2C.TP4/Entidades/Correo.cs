@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Correo: IMostrar<List<Paquete>>
+    public class Correo : IMostrar<List<Paquete>>
     {
         private List<Thread> mockPaquetes;
         private List<Paquete> paquetes;
-
+        
+        /// <summary>
+        /// Propiedad de lista de paquetes 
+        /// </summary>
         public List<Paquete> Paquetes
         {
             get
@@ -23,12 +26,19 @@ namespace Entidades
                 this.paquetes = value;
             }
         }
-
+        
+        /// <summary>
+        /// Constructor por defecto
+        /// </summary>
         public Correo()
         {
             this.mockPaquetes = new List<Thread>();
             this.paquetes = new List<Paquete>();
         }
+        
+        /// <summary>
+        /// Finaliz hilos activos 
+        /// </summary>
         public void FinEntregas()
         {
             foreach (Thread hilos in this.mockPaquetes)
@@ -37,17 +47,30 @@ namespace Entidades
                     hilos.Abort();
             }
         }
+
+        /// <summary>
+        /// Muestra informacion de Paquetes en correo
+        /// </summary>
+        /// <param name="elementos"></param>
+        /// <returns></returns>
         public string MostrarDatos(IMostrar<List<Paquete>> elementos)
         {
             StringBuilder sb = new StringBuilder();
             List<Paquete> lista = (List<Paquete>)((Correo)elementos).Paquetes;
             foreach (Paquete p in lista)
             {
-                sb.AppendFormat("{0} para {1} ({2})\n",p.TrackingID,p.DireccionEntrega,p.Estado.ToString());
+                sb.AppendFormat("{0} para {1} ({2})\n", p.TrackingID, p.DireccionEntrega, p.Estado.ToString());
             }
 
             return sb.ToString();
         }
+        
+        /// <summary>
+        /// Agrega un paquete a correo y crea hilo
+        /// </summary>
+        /// <param name="c"></param>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static Correo operator +(Correo c, Paquete p)
         {
             bool paqueteYaEnCorreo = false;
