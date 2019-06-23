@@ -143,7 +143,7 @@
             this.groupBox2.Location = new System.Drawing.Point(462, 295);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(326, 140);
-            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Paquete";
             // 
@@ -171,7 +171,7 @@
             this.btnMostrarTodos.Location = new System.Drawing.Point(211, 72);
             this.btnMostrarTodos.Name = "btnMostrarTodos";
             this.btnMostrarTodos.Size = new System.Drawing.Size(100, 36);
-            this.btnMostrarTodos.TabIndex = 19;
+            this.btnMostrarTodos.TabIndex = 3;
             this.btnMostrarTodos.Text = "Mostrar Todos";
             this.btnMostrarTodos.UseVisualStyleBackColor = true;
             this.btnMostrarTodos.Click += new System.EventHandler(this.btnMostrarTodos_Click);
@@ -182,7 +182,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(211, 25);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(100, 36);
-            this.btnAgregar.TabIndex = 18;
+            this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -192,7 +192,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(17, 88);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(188, 20);
-            this.txtDireccion.TabIndex = 17;
+            this.txtDireccion.TabIndex = 1;
             // 
             // mtxtTrackingID
             // 
@@ -200,7 +200,7 @@
             this.mtxtTrackingID.Mask = "000-000-0000";
             this.mtxtTrackingID.Name = "mtxtTrackingID";
             this.mtxtTrackingID.Size = new System.Drawing.Size(188, 20);
-            this.mtxtTrackingID.TabIndex = 16;
+            this.mtxtTrackingID.TabIndex = 0;
             // 
             // rtbMostrar
             // 
